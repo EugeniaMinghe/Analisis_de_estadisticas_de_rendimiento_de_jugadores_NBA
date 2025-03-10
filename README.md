@@ -1,4 +1,4 @@
-# Análisis de estadísticas de rendimiento de jugadores de NBA
+<h2 align="center">Análisis de estadísticas de rendimiento de jugadores de NBA</h2>
 
 <h3 align="center">¿Quiénes somos? ¿a qué nos dedicamos?</h3>
 Somos "Gametime Stats", una consultora especializada en el análisis de datos de la National Basketball Association (NBA).
