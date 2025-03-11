@@ -2,7 +2,7 @@ Esta carpeta contiene el notebook y los archivos resultantes de este primer paso
 
 ## 📂 Estructura de la Carpeta
 
-- **GameTime**:Jupyter Notebook con tratamiento de los archivos orginales.
+- **GameTime**: Jupyter Notebook con tratamiento de los archivos orginales.
 - **archivos_csv/**: Archivos de datos en formato CSV resultantes del análisis exploratorio.
 
 ## 🛠️ Herramientas Utilizadas
