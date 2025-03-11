@@ -32,3 +32,14 @@ Trabajaremos con el dataset **NBA Database** disponible en Kaggle:
 Esta base de datos contiene información sobre **30 equipos**, más de **4800 jugadores** y **65000 partidos** desde 1946, incluyendo puntajes del 95% de los encuentros.
 
 La información de Kaggle está organizada en **16 tablas CSV** que incluyen estadísticas completas de jugadores (tanto activos como retirados), equipos (actuales y históricos, incluyendo aquellos disueltos o que cambiaron de nombre) y resultados de partidos.
+
+---
+
+### 🖥️ **Stack Tecnológico y Herramientas**
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+</p>
+
