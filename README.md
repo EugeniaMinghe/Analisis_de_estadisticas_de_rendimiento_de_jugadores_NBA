@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/user-attachments/assets/da9c9432-a027-416d-88b6-c40c3704bc76" widht="300" height="300" >
+</p>
+
 <h2 align="center">Análisis de estadísticas de rendimiento de jugadores de NBA</h2>
 
 <h3 align="center">¿Quiénes somos? ¿a qué nos dedicamos?</h3>
