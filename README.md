@@ -1,7 +1,7 @@
 # 🏀 Gametime Stats - NBA Data Analytics Consultancy
 
 <p align="center">
-  <img src="Imagenes/Gametime Stats logo png.png" alt="Gametime Stats Logo" width="200">
+  <img src="Imagenes/basketball_slightly_blurred.png" alt="Gametime Stats Logo" width="200">
 </p>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub contributors](https://img.shields.io/github/contributors/usuario/repositorio) ![GitHub last commit](https://img.shields.io/github/last-commit/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub issues](https://img.shields.io/github/issues/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA)
@@ -16,6 +16,11 @@
 ---
 
 ## 💼 ¿Quiénes somos? ¿A qué nos dedicamos?
+
+<p align="center">
+  <img src="Imagenes/Gametime Stats logo png.png" alt="Gametime Stats Logo" width="200">
+</p>
+
 Somos "Gametime Stats", una consultora especializada en el análisis de datos de la **National Basketball Association (NBA)**.  
 Nuestra misión es apoyar la toma de decisiones para optimizar el rendimiento de los planteles y ayudar a los equipos a alcanzar sus objetivos de temporada, tanto a corto como a largo plazo. Con años de experiencia en el sector, hemos colaborado exitosamente con algunas de las principales franquicias de la liga, logrando excelentes resultados.
 
