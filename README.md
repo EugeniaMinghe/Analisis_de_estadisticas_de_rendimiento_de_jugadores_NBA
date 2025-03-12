@@ -1,3 +1,4 @@
+<div style="background-image: url('Imagenes/basketball_slightly_blurred.png'); background-size: cover; padding: 20px;">
 # 🏀 Gametime Stats - NBA Data Analytics Consultancy
 
 <p align="center">
