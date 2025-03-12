@@ -1,10 +1,9 @@
-<div style="background-image: url('https://github.com/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA/blob/main/Imagenes/basketball_slightly_blurred.png'); background-size: cover; padding: 20px;">
 # 🏀 Gametime Stats - NBA Data Analytics Consultancy
-
+<div style="background-color: #f0f0f0; padding: 20px;">
 <p align="center">
   <img src="Imagenes/Gametime Stats logo png.png" alt="Gametime Stats Logo" width="200">
 </p>
-
+</div>
 ![GitHub repo size](https://img.shields.io/github/repo-size/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub contributors](https://img.shields.io/github/contributors/usuario/repositorio) ![GitHub last commit](https://img.shields.io/github/last-commit/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub issues](https://img.shields.io/github/issues/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA)
 
 ## 📌 Tabla de Contenidos
@@ -52,5 +51,5 @@ La información está organizada en 16 tablas CSV que incluyen estadísticas com
 ---
 
 ## 📝 Resultados y Conclusiones
-</div>
+
 
