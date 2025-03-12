@@ -1,5 +1,6 @@
+<div style="background-image: url('Imagenes/basketball_slightly_blurred.png'); background-size: cover; padding: 20px;">
 # 🏀 Gametime Stats - NBA Data Analytics Consultancy
-<div style="background-color: #f0f0f0; padding: 20px;">
+
 <p align="center">
   <img src="Imagenes/Gametime Stats logo png.png" alt="Gametime Stats Logo" width="200">
 </p>
@@ -51,4 +52,5 @@ La información está organizada en 16 tablas CSV que incluyen estadísticas com
 ---
 
 ## 📝 Resultados y Conclusiones
+</div>
 
