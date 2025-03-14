@@ -11,8 +11,8 @@
 - [¿Qué problema buscamos resolver?](#qué-problema-buscamos-resolver)  
 - [Objetivo principal](#objetivo-principal)  
 - [Fuentes de datos](#fuentes-de-datos)
-- [Stack Tecnológico y Herramientas] (#stack-tecnológico-y-herramientas)
-- [Sprint #1]
+- [Stack Tecnológico y Herramientas](#stack-tecnológico-y-herramientas)
+- [Sprint #1](#sprint-1)
 - [Resultados y Conclusiones](#resultados-y-conclusiones)  
 
 ---
@@ -56,7 +56,12 @@ La información está organizada en 16 tablas CSV que incluyen estadísticas com
 </p>
 
 ---
+<p align="center">
+  <Las tareas se organizaron en dos sprints de dos semanas cada uno>
+</p>
 
+## 🚀 **Sprint #1 - Análisis Exploratorio de los Datos**
+---
 ## 📝 Resultados y Conclusiones
 
 
