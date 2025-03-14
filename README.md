@@ -10,7 +10,9 @@
 - [¿Quiénes somos?](#quiénes-somos)  
 - [¿Qué problema buscamos resolver?](#qué-problema-buscamos-resolver)  
 - [Objetivo principal](#objetivo-principal)  
-- [Fuentes de datos](#fuentes-de-datos)  
+- [Fuentes de datos](#fuentes-de-datos)
+- [Stack Tecnológico y Herramientas] (#stack-tecnológico-y-herramientas)
+- [Sprint #1]
 - [Resultados y Conclusiones](#resultados-y-conclusiones)  
 
 ---
