@@ -4,7 +4,7 @@
   <img src="Imagenes/Basketball.webp" alt="Basketball Image" style="width:100%; max-width:1000px;">
 </p>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub contributors](https://img.shields.io/github/contributors/usuario/repositorio) ![GitHub last commit](https://img.shields.io/github/last-commit/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub issues](https://img.shields.io/github/issues/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA)
+![GitHub repo size](https://img.shields.io/github/repo-size/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub contributors](https://img.shields.io/github/contributors/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub last commit](https://img.shields.io/github/last-commit/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA) ![GitHub issues](https://img.shields.io/github/issues/EugeniaMinghe/Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA)
 
 ## 📌 Tabla de Contenidos
 - [¿Quiénes somos?](#quiénes-somos)  
