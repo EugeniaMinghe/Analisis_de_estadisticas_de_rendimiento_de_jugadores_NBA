@@ -101,6 +101,20 @@ Para llevar a cabo un análisis actualizado del rendimiento de los jugadores de 
 Los datos adicionales se integraron utilizando los mismos procedimientos de limpieza y transformación que los datos anteriores, asegurando que se mantuviera la coherencia en los registros y las métricas utilizadas en el análisis. 
 A cada tabla se le adicionaron dos columnas (type season y season year) para indicar el tipo de temporada y el año de la misma, se filtraron por equipo para obtener los estadísticos de los jugadores de nuestro equipo objetivo y finalmente se unieron en una única tabla (**lakers_21_24**). 
 
+## 💾 **Creación de la Base de Datos** <a name="creacion-base-de-datos"></a>
+
+Una vez realizados los procesos de **ETL**, se creó la base de datos para organizar y almacenar las tablas de estadísticas de jugadores, equipos y partidos. Esta base de datos es fundamental para permitir consultas eficientes y análisis rápidos.
+
+La base de datos fue estructurada utilizando **SQL Server**, con tablas relacionadas por claves primarias y foráneas para asegurar la integridad de los datos. Las tablas filtradas fueron importadas a la base de datos asegurando el tipo de dato correcto para cada columna como también la normalización del nombre de cada una de ellas. De este modo la base de datos **GameTimeStats** contiene las siguientes tablas **Teams** (con la información sobre los equipos), **PlayerStatistics** (estadísticos de las temporadas 2021-2024 de los jugadores de los Lakers), **InfoPlayers** (información sobre los jugadores de los Lakers incoporando los nuevos de las últimas temporadas), **PlayersLAL** (información de los jugadores de los Lakers previos), **Players** (información de jugadores en general), **PlayByPlay** (información sobre los diferentes partidos de las últimas temporadas), **OtherStats** (otros estadísticos de los partidos de las últimas temporadas), **LineScored** (información sobre los resultados de los partidos), **GamesLakers** (estadísticos y resultados de los partidos de los Lakers de las últimas tres temporadas) y **DraftHistory** (información sobre los jugadores drafteados a lo largo del tiempo por los Lakers). 
+
+#### PlayerStatistics 
+
+Para los jugadores presentes en la tabla **PlayerStatistics** se generó una nueva columna con el PlayerID, el cual se completó a partir de las tablas **InfoPlayers** y **Players** usando el FullName como columna vinculante. Sin embargo, para aquellos casos en que los jugadores no se encontraron en las tablas mencionadas, se les generó un nuevo ID asegurándonos de no pisar ninguno en existencia. Posteriormente, dichos nuevos IDs fueron agregados a la tabla **InfoPlayers** en conjunto con su FullName, FirstName y LastName (asegurando que solo los diferentes fueran incorporados, evitando así duplicaciones de los datos y futuros inconvenientes en la base de datos),luego ambas tablas fueron relacionadas mediante el PlayerID (PK en **InfoPlayers** y FK en **PlayerStatistics**), y finalmente, las columnas FullName, FirstName y LastName fueron eliminadas de **PlayerStatistics**. 
+
+## 🗃️ **Diagrama Entidad-Relación
+
+Con las PKs (Primary Keys) y las FK (Foreign Keys) ya establecidas en cada tabla, permitiendo la vinulación entre nuestras tablas y asegurando así su integridad referencial, se construyó el diagrama de Entidad-Relación en SQL Server, y luego solo esquematizó en Lucid [aquí](https://lucid.app/lucidchart/2108a42f-89c5-4a1a-a83e-8a02225f43b3/edit?invitationId=inv_8b675668-152b-4454-8bfd-d4e3fa8e5344&page=0_0#). **Es importante aclarar que las PKs fueron asignadas a campos que identifiquen de manera única los registros de las respectivas tablas.**
+
 ---
 
 ## 🖥️ **Stack Tecnológico y Herramientas**
@@ -109,9 +123,8 @@ A cada tabla se le adicionaron dos columnas (type season y season year) para ind
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
 </p>
 
 ---
 ## 📝 Resultados y Conclusiones
-
-
