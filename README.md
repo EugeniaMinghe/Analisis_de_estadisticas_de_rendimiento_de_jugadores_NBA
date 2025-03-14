@@ -64,7 +64,7 @@ Una de las primeras tareas clave del proyecto fue la creación de un repositorio
 El repositorio también incluye documentación básica sobre el proyecto y los archivos, organizada en carpetas según la tarea a la cual se vinculan, imágenes y un archivo README que describe el flujo del proyecto.
 
 <p align="center">
-  <img src="Imagenes/EDA-Exploratory-Data-Analysis.jpg" alt="EDA Image" style="width:100%; max-width:600px;" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Octicons-file-earmark-bar-graph.svg/1024px-Octicons-file-earmark-bar-graph.svg.png" alt="EDA Icon" style="width:100px;"/>
 </p>
 
 ### Selección de los archivos
