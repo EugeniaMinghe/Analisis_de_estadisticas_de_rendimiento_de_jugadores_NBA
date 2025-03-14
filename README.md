@@ -51,9 +51,20 @@ Todas las tareas y actividades se organizarón en dos Sprints, de dos semanas ca
 
 ## 🚀 **Sprint #1 - Análisis Exploratorio de los Datos**
 
+<p align="left">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="GitHub Logo" width="50" />
+</p>
+### Creación del Repositorio Público en GitHub
+Una de las primeras tareas clave del proyecto fue la creación de un repositorio público en GitHub. Esto permitió:
+- **Centralizar la gestión del código:** Todos los archivos y scripts del proyecto se almacenan de manera ordenada en el repositorio, lo que facilita el acceso y la colaboración.
+- **Facilitar la colaboración:** Al ser un repositorio público, cualquier miembro del equipo, o incluso colaboradores externos, pueden revisar, sugerir mejoras o hacer contribuciones al proyecto.
+- **Control de versiones:** Gracias a GitHub, el control de versiones del código y los datos asociados es sencillo, lo que asegura que los cambios importantes sean rastreados y se puedan revertir en caso necesario.
+  
+El repositorio también incluye documentación básica sobre el proyecto y los archivos, organizada en carpetas según la tarea a la cual se vinculan, imágenes y un archivo README que describe el flujo del proyecto.
+
 ---
 
-### 🖥️ **Stack Tecnológico y Herramientas**
+## 🖥️ **Stack Tecnológico y Herramientas**
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
