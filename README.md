@@ -60,6 +60,7 @@ La información está organizada en 16 tablas CSV que incluyen estadísticas com
   <Las tareas se organizaron en dos sprints de dos semanas cada uno>
 </p>
 
+---
 ## 🚀 **Sprint #1 - Análisis Exploratorio de los Datos**
 ---
 ## 📝 Resultados y Conclusiones
