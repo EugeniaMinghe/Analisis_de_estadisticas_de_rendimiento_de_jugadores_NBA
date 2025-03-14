@@ -63,18 +63,14 @@ Una de las primeras tareas clave del proyecto fue la creación de un repositorio
   
 El repositorio también incluye documentación básica sobre el proyecto y los archivos, organizada en carpetas según la tarea a la cual se vinculan, imágenes y un archivo README que describe el flujo del proyecto.
 
-<p align="center">
+<p align="left">
   <img src="Imagenes/file-earmark-bar-graph-svgrepo-com.svg" alt="EDA Icon" style="width:100px;"/>
 </p>
 
 ### Selección de los archivos
 La selección de los archivos relevantes es un paso fundamental en el análisis exploratorio. En esta fase, se eligieron los csv que contienen los datos más completos y útiles para el análisis de rendimiento de los jugadores, considerando las variables necesarias para los análisis posteriores.
 
-## 🔄 **ETL** - Extracción, Transformación y Carga de Datos
-
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Apache_NiFi_logo.svg" alt="ETL Logo" style="width:100%; max-width:400px;" />
-</p>
+### 🔄 **ETL** - Extracción, Transformación y Carga de Datos
 
 El filtrado de las tablas se realizó mediante Python en Visual Studio Code, con el objetivo de eliminar los datos que consideramos innecesarios para el análisis (reduciendo el consumo de recursos), modificar el tipo de dato cuando se requiriese y normalizar el nombre de las columnas en las diferentes tablas. 
 
@@ -97,6 +93,13 @@ El filtrado de las tablas se realizó mediante Python en Visual Studio Code, con
 - **play_by_play_filtered**: filtrado por los game_id de interés para nuestro análisis, eliminación de las columnas con más de 50% de datos nulos y de aquellas cuya información puede obtener de la tabla `players` (`player1_name`, `player1_team_id`, `player1_team_city`, `player1_team_nickname`, `player1_team_abbreviation`, `player2_name`, `player2_team_id`, `player2_team_city`, `player2_team_nickname`, `player2_team_abbreviation`, `player3_name`, `player3_team_id`, `player3_team_city`, `player3_team_nickname`, `player3_team_abbreviation`, `homedescription`, `neutraldescription`, `visitordescription`) y eliminación de cuatro duplicados.
 
 **NINGÚN CSV, EXCEPTO `PLAY BY PLAY`, TENÍA DATOS DUPLICADOS.**
+
+## 🏀 **Incorporación de Nuevos Datos de los Lakers: Temporadas 2021-2024**
+
+Para llevar a cabo un análisis actualizado del rendimiento de los jugadores de los **Los Angeles Lakers**, se incorporaron los datos correspondientes a las temporadas 2021-2024 (temporada regular y Playoffs 2021-2022 [aquí](https://www.kaggle.com/datasets/vivovinco/nba-player-stats?select=2021-2022+NBA+Player+Stats+-+Regular.csv), temporada regular y Playoffs 2022-2023 [aquí](https://www.kaggle.com/datasets/vivovinco/20222023-nba-player-stats-regular?select=2022-2023+NBA+Player+Stats+-+Regular.csv) y temporada regular y Playoffs 2023-2024 [aquí](https://www.kaggle.com/datasets/vivovinco/2023-2024-nba-player-stats)). Esto incluye nuevas estadísticas de jugadores, registros de partidos y cambios en el rendimiento a lo largo de las temporadas recientes. Esta información es crucial para evaluar el impacto de los jugadores clave y su contribución a los resultados del equipo.
+
+Los datos adicionales se integraron utilizando los mismos procedimientos de limpieza y transformación que los datos anteriores, asegurando que se mantuviera la coherencia en los registros y las métricas utilizadas en el análisis. 
+A cada tabla se le adicionaron dos columnas (type season y season year) para indicar el tipo de temporada y el año de la misma, se filtraron por equipo para obtener los estadísticos de los jugadores de nuestro equipo objetivo y finalmente se unieron en una única tabla (**lakers_21_24**). 
 
 ---
 
