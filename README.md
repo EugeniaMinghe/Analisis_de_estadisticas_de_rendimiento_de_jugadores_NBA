@@ -115,6 +115,22 @@ Para los jugadores presentes en la tabla **PlayerStatistics** se generó una nue
 
 Con las PKs (Primary Keys) y las FK (Foreign Keys) ya establecidas en cada tabla, permitiendo la vinulación entre nuestras tablas y asegurando así su integridad referencial, se construyó el diagrama de Entidad-Relación en SQL Server, y luego solo esquematizó en Lucid [aquí](https://lucid.app/lucidchart/2108a42f-89c5-4a1a-a83e-8a02225f43b3/edit?invitationId=inv_8b675668-152b-4454-8bfd-d4e3fa8e5344&page=0_0#). **Es importante aclarar que las PKs fueron asignadas a campos que identifiquen de manera única los registros de las respectivas tablas.**
 
+## 🔒 **Seguridad de la Base de Datos en Google Cloud**  
+
+En el contexto de la administración de una base de datos en **Google Cloud**, se han implementado medidas de seguridad esenciales para proteger los datos y asegurar el acceso autorizado.  
+
+### Principales acciones realizadas:  
+- **Creación de un Inicio de Sesión (Login)**:  
+  Se ha configurado un inicio de sesión seguro mediante autenticación gestionada por Google Cloud. Esto garantiza que solo usuarios autorizados puedan acceder a los recursos de la base de datos.  
+
+- **Creación de un Usuario (User)**:  
+  Se ha definido un usuario asociado al inicio de sesión con permisos específicos para interactuar con la base de datos. El manejo de permisos se realiza a través de **Identity and Access Management (IAM)**, lo que permite un control preciso y detallado.  
+
+- **Asignación de Roles**:  
+  Los roles se han configurado siguiendo el principio de **menor privilegio**, otorgando solo los permisos estrictamente necesarios para cada usuario. Esto incluye permisos para lectura, escritura y administración, según las responsabilidades asignadas.  
+
+Estas medidas de seguridad permiten garantizar la integridad de los datos, protegerlos contra accesos no autorizados y cumplir con los estándares de seguridad en la nube de Google Cloud.  
+
 ---
 
 ## 🖥️ **Stack Tecnológico y Herramientas**
