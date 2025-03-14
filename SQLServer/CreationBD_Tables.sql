@@ -21,26 +21,9 @@ FILEGROWTH= 5MB
 -- Comando de uso de la base de datos creada
 USE GameTimeStats;
 
---Crear la tabla Players
-CREATE TABLE Players (
-PlayerID INT PRIMARY KEY, --No usé el IDENTITY (1,1) porque quiero que tome los datos del csv
-FullName NVARCHAR (150) NOT NULL,
-FirstName NVARCHAR (150) NOT NULL,
-LastName NVARCHAR (150) NOT NULL
-);
-
--- Crear la tabla PlayersLAL
-CREATE TABLE PlayersLAL (
-    PlayerID INT,
-	FullName NVARCHAR (150) NOT NULL,
-	FirstName NVARCHAR (150) NOT NULL,
-	LastName NVARCHAR (150) NOT NULL 
-	FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID),
-);
-
 -- Crear la tabla Teams
 CREATE TABLE Teams (
-	TeamID INT PRIMARY KEY,
+	TeamID INT PRIMARY KEY, --No usé el IDENTITY (1,1) porque quiero que tome los datos del csv
 	FullName NVARCHAR (150) NOT NULL, 
 	Abbreviation NVARCHAR (150), 
 	Nickname NVARCHAR (150), 
@@ -51,7 +34,7 @@ CREATE TABLE Teams (
 
 -- Crear la tabla InfoPlayers
 CREATE TABLE InfoPlayers (
-    PlayerID INT,
+    PlayerID INT PRIMARY KEY, --No usé el IDENTITY (1,1) porque quiero que tome los datos del csv
     FirstName NVARCHAR (150) NOT NULL,
 	LastName NVARCHAR (150) NOT NULL, 
 	FullName NVARCHAR (150) NOT NULL,
@@ -76,8 +59,25 @@ CREATE TABLE InfoPlayers (
 	DraftRound NVARCHAR (50),
 	DraftNumber NVARCHAR (50),
 	Greatest75Flag NVARCHAR (10)
-	FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID),
 	FOREIGN KEY (TeamID) REFERENCES Teams(TeamID),
+);
+
+--Crear la tabla Players
+CREATE TABLE Players (
+PlayerID INT,
+FullName NVARCHAR (150) NOT NULL,
+FirstName NVARCHAR (150) NOT NULL,
+LastName NVARCHAR (150) NOT NULL
+FOREIGN KEY (PlayerID) REFERENCES InfoPlayers(PlayerID),
+);
+
+-- Crear la tabla PlayersLAL
+CREATE TABLE PlayersLAL (
+    PlayerID INT,
+	FullName NVARCHAR (150) NOT NULL,
+	FirstName NVARCHAR (150) NOT NULL,
+	LastName NVARCHAR (150) NOT NULL 
+	FOREIGN KEY (PlayerID) REFERENCES InfoPlayers(PlayerID),
 );
 
 -- Crear la tabla DraftHistory
@@ -93,7 +93,7 @@ CREATE TABLE DraftHistory (
 	Organization NVARCHAR(150) NOT NULL, 
 	OrganizationType NVARCHAR(150) NOT NULL, 
 	PlayerProfileFlag INT NOT NULL
-	FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID),
+	FOREIGN KEY (PlayerID) REFERENCES InfoPlayers(PlayerID),
 	FOREIGN KEY (TeamID) REFERENCES Teams(TeamID),
 );
 
@@ -250,7 +250,166 @@ CREATE TABLE PlayByPlay (
 	Player3ID INT, 
 	VideoAvailableFlag INT
 	FOREIGN KEY (GameID) REFERENCES GamesLakers(GameID),
-	FOREIGN KEY (Player1ID) REFERENCES Players(PlayerID),
-	FOREIGN KEY (Player2ID) REFERENCES Players(PlayerID),
-	FOREIGN KEY (Player3ID) REFERENCES Players(PlayerID),
+	FOREIGN KEY (Player1ID) REFERENCES InfoPlayers(PlayerID),
+	FOREIGN KEY (Player2ID) REFERENCES InfoPlayers(PlayerID),
+	FOREIGN KEY (Player3ID) REFERENCES InfoPlayers(PlayerID),
 	);
+
+-- Crear la tabla PlayerStatistics
+CREATE TABLE PlayerStatistics (
+	Rk INT,
+	FullName NVARCHAR (150) NOT NULL,
+	Pos NVARCHAR(10) NOT NULL,
+	Age INT NOT NULL,
+	TeamAbbreviation NVARCHAR(10) NOT NULL,
+	G INT NOT NULL,
+	Gs INT NOT NULL,
+	Mp FLOAT NOT NULL,
+	Fg FLOAT NOT NULL,
+	Fga FLOAT NOT NULL,
+	FgpPercent FLOAT NOT NULL,
+	P3 FLOAT NOT NULL,
+	PA3 FLOAT NOT NULL,
+	P3Percent FLOAT NOT NULL,
+	P2 FLOAT NOT NULL,
+	PA2 FLOAT NOT NULL,
+	P2Percent FLOAT NOT NULL,
+	EfgPercent FLOAT NOT NULL,
+	Ft FLOAT NOT NULL,
+	Fta FLOAT NOT NULL,
+	FtPercent FLOAT NOT NULL,
+	Orb FLOAT NOT NULL,
+	Drb FLOAT NOT NULL,
+	Trb FLOAT NOT NULL,
+	Ast FLOAT NOT NULL,
+	Stl FLOAT NOT NULL,
+	Blk FLOAT NOT NULL,
+	Tov FLOAT NOT NULL,
+	Pf FLOAT NOT NULL,
+	Pts FLOAT NOT NULL,
+	TypeSeason NVARCHAR (150) NOT NULL,
+	SeasonYear NVARCHAR (150) NOT NULL
+); 
+
+--Agregar PlayerID a la tabla
+ALTER TABLE PlayerStatistics
+ADD PlayerID INT;
+
+SELECT * FROM PlayerStatistics
+
+--Completar la columna con los valores de PlayerID de la tabla Players e InfoPlayers usando el FullName como vínculo para las coincidencias
+UPDATE PS
+SET PS.PlayerID = P.PlayerID
+FROM PlayerStatistics AS PS
+JOIN Players AS P ON PS.FullName = P.FullName;
+
+SELECT * FROM PlayerStatistics;
+
+UPDATE PS
+SET PS.PlayerID = I.PlayerID
+FROM PlayerStatistics AS PS
+JOIN InfoPlayers AS I ON PS.FullName = I.FullName;
+
+SELECT * FROM PlayerStatistics;
+
+--Completar los valores nulos de PlayerID en Player Statistics
+--Primero obtengo el último valor de PlayerID de Players
+DECLARE @LastPlayerID INT;
+
+SELECT @LastPlayerID = MAX(PlayerID)
+FROM Players;
+
+--Actualizar los PlayerID nulos en PlayerStatistics
+WITH CTE AS (   --creamos una tabla temporal
+    SELECT *,   -- selecciona todas las columnas y filtra los registros con PlayerID NULL usando la condición del WHERE
+           ROW_NUMBER() OVER (ORDER BY FullName) + 3500000 AS NewPlayerID -- genera columna adicional que asigna números consecutivos a cada fila siguiente el order del FullName
+    FROM PlayerStatistics
+    WHERE PlayerID IS NULL
+)
+UPDATE PlayerStatistics -- actualiza filas seleccionadas en el paso previo
+SET PlayerID = CTE.NewPlayerID -- asigna un valor al PlayerID NULL 
+FROM PlayerStatistics ps
+JOIN CTE
+    ON ps.PlayerID IS NULL
+    AND ps.FullName = CTE.FullName;
+
+SELECT * FROM PlayerStatistics;
+
+ALTER TABLE PlayerStatistics
+ADD FirstName NVARCHAR(150),
+    LastName NVARCHAR(150);
+
+SELECT * FROM PlayerStatistics;
+
+--Para agregar los nuevos PlayersIDs a la tabla InfoPlayers y que haya algún dato más
+UPDATE PlayerStatistics
+SET FirstName = LEFT(FullName, CHARINDEX(' ', FullName) - 1),
+    LastName = LTRIM(RIGHT(FullName, LEN(FullName) - CHARINDEX(' ', FullName)));
+
+SELECT * FROM PlayerStatistics;
+
+--Es necesario permiten que ciertas columnas sean nulas que antes no lo eran porque no están los datos
+ALTER TABLE InfoPlayers
+ALTER COLUMN Birthday DATE NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN LastAffilation NVARCHAR (150) NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN Height NVARCHAR (10) NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN PlayerWeight DECIMAL (5,2) NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN SeasonExp NVARCHAR (50) NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN Position NVARCHAR (100) NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN RosterStatus NVARCHAR (150) NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN FromYear INT NULL
+
+ALTER TABLE InfoPlayers
+ALTER COLUMN ToYear INT NULL;
+
+--Inserto los datos de los PlayerIDs diferentes a la tabla InfoPlayers
+INSERT INTO InfoPlayers (PlayerID, FullName, FirstName, LastName)
+SELECT DISTINCT 
+    ps.PlayerID,
+    ps.FullName,
+    ps.FirstName,
+    ps.LastName
+FROM 
+    PlayerStatistics ps
+LEFT JOIN 
+    InfoPlayers ip ON ps.PlayerID = ip.PlayerID
+WHERE 
+    ip.PlayerID IS NULL;
+
+SELECT * FROM InfoPlayers;
+
+--Completo el TeamId porque todos son de los Lakers 
+
+UPDATE InfoPlayers
+SET TeamID = 1610612747
+WHERE TeamID IS NULL;
+
+SELECT * FROM InfoPlayers;
+
+--Puedo vincular PlayStatistics mediante una FK con InfoPlayers y agregarla al esquema relacional
+ALTER TABLE PlayerStatistics
+ADD CONSTRAINT FK_PlayerID
+FOREIGN KEY (PlayerID) REFERENCES InfoPlayers(PlayerID);
+
+SELECT*FROM PlayerStatistics;
+
+--Elimino las columnas FirstName, LastName y FullName porque ya están en la tabla InfoPlayers
+
+ALTER TABLE PlayerStatistics
+DROP COLUMN FirstName, LastName, FullName;
+
+SELECT*FROM PlayerStatistics;

@@ -1,33 +1,6 @@
 -- Comando de uso de la base de datos creada
 USE GameTimeStats;
 
--- Cargar los datos desde el archivo CSV a la tabla Players
-BULK INSERT Players
-FROM 'C:\Users\Eugenia\Downloads\ProyectoFinal\ETL\players_filtered.csv'
-WITH (
-    FIRSTROW = 2,             -- Para omitir la fila de encabezado
-    FIELDTERMINATOR = ',',    -- Separador de columnas (en este caso, coma)
-    ROWTERMINATOR = '\n',     -- Separador de filas (nueva línea)
-    KEEPIDENTITY,             -- Mantener los IDs originales del CSV
-    CODEPAGE = '65001',       -- Soporte para UTF-8
-    TABLOCK                  -- Aumenta el rendimiento al bloquear la tabla
-);
-
-Select * from Players; 
-
--- Cargar los datos desde el archivo CSV a la tabla PlayersLAL
-BULK INSERT PlayersLAL
-FROM 'C:\Users\Eugenia\Downloads\ProyectoFinal\ETL\players_Lakers.csv'
-WITH (
-    FIRSTROW = 2,             -- Para omitir la fila de encabezado
-    FIELDTERMINATOR = ',',    -- Separador de columnas (en este caso, coma)
-    ROWTERMINATOR = '\n',     -- Separador de filas (nueva línea)
-    KEEPIDENTITY,             -- Mantener los IDs originales del CSV
-    CODEPAGE = '65001',       -- Soporte para UTF-8
-    TABLOCK                  -- Aumenta el rendimiento al bloquear la tabla
-);
-
-Select * from PlayersLAL; 
 
 -- Cargar los datos desde el archivo CSV a la tabla Teams
 BULK INSERT Teams
@@ -56,6 +29,34 @@ WITH (
 );
 
 Select * from InfoPlayers; 
+
+-- Cargar los datos desde el archivo CSV a la tabla Players
+BULK INSERT Players
+FROM 'C:\Users\Eugenia\Downloads\ProyectoFinal\ETL\players_filtered.csv'
+WITH (
+    FIRSTROW = 2,             -- Para omitir la fila de encabezado
+    FIELDTERMINATOR = ',',    -- Separador de columnas (en este caso, coma)
+    ROWTERMINATOR = '\n',     -- Separador de filas (nueva línea)
+    KEEPIDENTITY,             -- Mantener los IDs originales del CSV
+    CODEPAGE = '65001',       -- Soporte para UTF-8
+    TABLOCK                  -- Aumenta el rendimiento al bloquear la tabla
+);
+
+Select * from Players; 
+
+-- Cargar los datos desde el archivo CSV a la tabla PlayersLAL
+BULK INSERT PlayersLAL
+FROM 'C:\Users\Eugenia\Downloads\ProyectoFinal\ETL\players_Lakers.csv'
+WITH (
+    FIRSTROW = 2,             -- Para omitir la fila de encabezado
+    FIELDTERMINATOR = ',',    -- Separador de columnas (en este caso, coma)
+    ROWTERMINATOR = '\n',     -- Separador de filas (nueva línea)
+    KEEPIDENTITY,             -- Mantener los IDs originales del CSV
+    CODEPAGE = '65001',       -- Soporte para UTF-8
+    TABLOCK                  -- Aumenta el rendimiento al bloquear la tabla
+);
+
+Select * from PlayersLAL; 
 
 -- Cargar los datos desde el archivo CSV a la tabla DraftHistory
 BULK INSERT DraftHistory
@@ -126,3 +127,19 @@ WITH (
 );
 
 Select * from PlayByPlay; 
+
+	-- Cargar los datos desde el archivo CSV a la tabla PlayerStatistics
+BULK INSERT PlayerStatistics
+FROM 'C:\Users\Eugenia\Downloads\ProyectoFinal\ETL\lakers_21_24.csv'
+WITH (
+    FIRSTROW = 2,             -- Para omitir la fila de encabezado
+    FIELDTERMINATOR = ',',    -- Separador de columnas (en este caso, coma)
+    ROWTERMINATOR = '\n',     -- Separador de filas (nueva línea)
+    KEEPIDENTITY,             -- Mantener los IDs originales del CSV
+    CODEPAGE = '1252',       -- Soporte para UTF-8
+    TABLOCK                  -- Aumenta el rendimiento al bloquear la tabla
+);
+
+Select * from PlayerStatistics; 
+
+
