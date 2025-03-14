@@ -63,6 +63,15 @@ Una de las primeras tareas clave del proyecto fue la creación de un repositorio
   
 El repositorio también incluye documentación básica sobre el proyecto y los archivos, organizada en carpetas según la tarea a la cual se vinculan, imágenes y un archivo README que describe el flujo del proyecto.
 
+<p align="center">
+  <img src="Imagenes/EDA-Exploratory-Data-Analysis.jpg" alt="EDA Image" style="width:100%; max-width:600px;" />
+</p>
+
+### Selección de los archivos
+La selección de los archivos relevantes es un paso fundamental en el análisis exploratorio. En esta fase, se eligieron los csv que contienen los datos más completos y útiles para el análisis de rendimiento de los jugadores, considerando las variables necesarias para los análisis posteriores.
+
+
+
 ---
 
 ## 🖥️ **Stack Tecnológico y Herramientas**
