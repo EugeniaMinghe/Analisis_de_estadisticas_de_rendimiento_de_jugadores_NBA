@@ -11,8 +11,8 @@
 - [¿Qué problema buscamos resolver?](#qué-problema-buscamos-resolver)  
 - [Objetivo principal](#objetivo-principal)  
 - [Fuentes de datos](#fuentes-de-datos)
-- [Stack Tecnológico y Herramientas](#stack-tecnológico-y-herramientas)
 - [Sprint #1](#sprint-1)
+- [Stack Tecnológico y Herramientas](#stack-tecnológico-y-herramientas)
 - [Resultados y Conclusiones](#resultados-y-conclusiones)  
 
 ---
@@ -43,7 +43,13 @@ El objetivo del proyecto es identificar tendencias y patrones relevantes en las 
 ## 🗂️ ¿Qué fuentes de datos usaremos?
 Trabajaremos con el dataset **NBA Database** disponible en Kaggle [aquí](https://www.kaggle.com/datasets/wyattowalsh/basketball). Esta base de datos contiene información sobre 30 equipos, más de 4800 jugadores y 65000 partidos desde 1946, incluyendo puntajes del 95% de los encuentros.
 
-La información está organizada en 16 tablas CSV que incluyen estadísticas completas de jugadores (activos y retirados), equipos (actuales y antiguos) y resultados de partidos.
+La información está organizada en 16 tablas CSV que incluyen estadísticas completas de jugadores (activos y retirados), equipos (actuales y antiguos) y resultados de partidos. 
+
+Todas las tareas y actividades se organizarón en dos Sprints, de dos semanas cada uno. 
+
+---
+
+## 🚀 **Sprint #1 - Análisis Exploratorio de los Datos**
 
 ---
 
@@ -55,13 +61,6 @@ La información está organizada en 16 tablas CSV que incluyen estadísticas com
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 </p>
 
----
-<p align="center">
-  <Las tareas se organizaron en dos sprints de dos semanas cada uno>
-</p>
-
----
-## 🚀 **Sprint #1 - Análisis Exploratorio de los Datos**
 ---
 ## 📝 Resultados y Conclusiones
 
