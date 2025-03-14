@@ -111,7 +111,7 @@ La base de datos fue estructurada utilizando **SQL Server**, con tablas relacion
 
 Para los jugadores presentes en la tabla **PlayerStatistics** se generó una nueva columna con el PlayerID, el cual se completó a partir de las tablas **InfoPlayers** y **Players** usando el FullName como columna vinculante. Sin embargo, para aquellos casos en que los jugadores no se encontraron en las tablas mencionadas, se les generó un nuevo ID asegurándonos de no pisar ninguno en existencia. Posteriormente, dichos nuevos IDs fueron agregados a la tabla **InfoPlayers** en conjunto con su FullName, FirstName y LastName (asegurando que solo los diferentes fueran incorporados, evitando así duplicaciones de los datos y futuros inconvenientes en la base de datos),luego ambas tablas fueron relacionadas mediante el PlayerID (PK en **InfoPlayers** y FK en **PlayerStatistics**), y finalmente, las columnas FullName, FirstName y LastName fueron eliminadas de **PlayerStatistics**. 
 
-## 🗃️ **Diagrama Entidad-Relación
+## 🗃️ Diagrama Entidad-Relación
 
 Con las PKs (Primary Keys) y las FK (Foreign Keys) ya establecidas en cada tabla, permitiendo la vinulación entre nuestras tablas y asegurando así su integridad referencial, se construyó el diagrama de Entidad-Relación en SQL Server, y luego solo esquematizó en Lucid [aquí](https://lucid.app/lucidchart/2108a42f-89c5-4a1a-a83e-8a02225f43b3/edit?invitationId=inv_8b675668-152b-4454-8bfd-d4e3fa8e5344&page=0_0#). **Es importante aclarar que las PKs fueron asignadas a campos que identifiquen de manera única los registros de las respectivas tablas.**
 
