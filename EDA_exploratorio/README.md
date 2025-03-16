@@ -4,6 +4,8 @@ Esta carpeta contiene el notebook y los archivos resultantes de este primer paso
 
 - **GameTime**: Jupyter Notebook con tratamiento de los archivos orginales.
 - **archivos_csv/**: Archivos de datos en formato CSV resultantes del análisis exploratorio.
+- **Lectura nbasqlite**: Jupyter Notebook para abrir el archivo nba.sqlite
+- **season21_24**: Jupyter Notebook que contiene los datos de las últimas temporadas.
 
 ## 🛠️ Herramientas Utilizadas
 
