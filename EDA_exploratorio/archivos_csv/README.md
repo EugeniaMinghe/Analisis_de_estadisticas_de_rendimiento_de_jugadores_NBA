@@ -1,4 +1,8 @@
-Esta carpeta contiene todos los archivos CSV los cuales serán explorados para entender el conjunto de datos y tomar decisiones.
+<p align="center">
+  <img src="Imagenes/Gametime Stats logo png.png" alt="Gametime Stats Logo" width="200">
+</p>
+
+📌Esta carpeta contiene todos los archivos CSV los cuales serán explorados para entender el conjunto de datos y tomar decisiones.
 
 ## 📂 Estructura de la Carpeta
 
