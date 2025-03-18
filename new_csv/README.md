@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA/Imagenes/Gametime Stats logo png.png" alt="Gametime Stats Logo" width="200">
+  <img src="../Imagenes/Gametime%20Stats%20logo%20png.png" alt="Gametime Stats Logo" width="200">
 </p>
 
 📌Esta carpeta contiene los archivos CSV limpios y filtrados de las estadísticas de los jugadores durante las tres últimas temporadas .
