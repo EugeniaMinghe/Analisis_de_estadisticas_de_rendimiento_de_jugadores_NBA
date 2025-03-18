@@ -126,6 +126,39 @@ En el contexto de la administración de una base de datos en **Google Cloud**, s
 
 Estas medidas de seguridad permiten garantizar la integridad de los datos, protegerlos contra accesos no autorizados y cumplir con los estándares de seguridad en la nube de Google Cloud.  
 
+## 🚀 **Automatización de la Ingesta de Datos** 
+
+### 1. 📂 **Transferencia de Archivos desde Google Drive al Bucket usando Cloud Storage Transfer Service**
+**Creación de un Trabajo en Cloud Storage Transfer Service:**
+A través de **Storage Transfer Service** disponible en Google Cloud se crea un nuevo trabajo de transferencia, detallando:
+   - **Origen:** "Google Drive" como la fuente de datos (colocamos la URL de nuestra carpeta que recibe los csv nuevos con las estadísticas de los jugadores semanalmente).
+   - **Destino:** Bucket de Google Cloud Storage (`to_database`).
+   - **Configuración:**
+     - La transferencia se ejecuta los días domingo de cada semana.
+     - Incluye todos los archivos en el directorio específico de Google Drive.
+Configuramnos la frecuencia del trabajo para que se ejecute semanalmente, todos los domingos. Verificamos la configuración y se **"Crear trabajo"**.
+
+### 2. 🛠️ **Procesar los Archivos en Cloud Run (Cargar los Datos de Cloud Storage a BigQuery)**
+**Creación de un Servicio de Cloud Run para Cargar los Archivos:**
+A través de **Cloud Run**, creamos un nuevo servicio y seleccionamos la imagen de Docker ya existente (`hello`). El servicio de **Cloud Run** se conecta al bucket de **Cloud Storage** (`to_database`), lee los archivos CSV ahí guardados y luego carga los datos a **BigQuery**. Aceptamos **"Crear"** para desplegar el servicio de Cloud Run.
+
+### 3. 🗓️ **Usar Cloud Scheduler para Automatizar la Ejecución de Cloud Run**
+**Creación de un Trabajo en Cloud Scheduler:**
+Mediante **Cloud Scheduler** creamos un nuevo trabajo y detallamos:
+   - **Nombre del trabajo:** `run-player-stats`.
+   - **Frecuencia:** Configuramos la ejecución (`0 0 * * 1` para ejecutarlo cada lunes a medianoche).
+Configuramos la acción HTTP para ejecutar Cloud Run, colocando:
+   - **Destino:** Seleccionamos **HTTP**.
+   - **URL:** Ingresamos la URL del servicio de Cloud Run creado previamente.
+   - **Método:** Elegimos **POST**.
+Aceptamos **"Crear"** el trabajo.
+
+### 4. 📝 **Validación del Proceso**
+
+- **Notificación en Google Cloud:** Configuramos el envío de una notificación que informe el estado de cada etapa del proceso, permitiendo recibir alertas en caso de errores o de finalización exitosa.  
+- **Verificación de Errores:** Si alguna fase del flujo de datos presenta problemas, se generan registros detallados que facilitan la identificación y corrección de los mismos.  
+- **Seguimiento en Tiempo Real:** El monitoreo continuo garantiza que el proceso de transferencia, carga y automatización se ejecute de manera correcta, brindando mayor confiabilidad en la gestión de los datos.  
+
 ---
 
 ## 🖥️ **Stack Tecnológico y Herramientas**
