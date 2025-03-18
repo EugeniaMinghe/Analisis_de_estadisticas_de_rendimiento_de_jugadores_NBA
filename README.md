@@ -168,6 +168,7 @@ Aceptamos **"Crear"** el trabajo.
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
   <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/Lucid-0083FF?style=for-the-badge&logo=lucidchart&logoColor=white" />
 </p>
 
 ---
