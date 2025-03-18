@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Analisis_de_estadisticas_de_rendimiento_de_jugadores_NBA/Imagenes/Gametime Stats logo png.png" alt="Gametime Stats Logo" width="200">
+  <img src="../Imagenes/Gametime%20Stats%20logo%20png.png" alt="Gametime Stats Logo" width="200">
 </p>
 
 📌Esta carpeta contiene el notebook y los archivos resultantes de este primer paso, relacionados con el Análisis Exploratorio de Datos (EDA) para el proyecto. El objetivo del EDA es comprender la estructura, el contenido y las características principales de los datos, identificar patrones, anomalías y relaciones, así como preparar los datos para el análisis posterior.
