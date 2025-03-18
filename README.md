@@ -51,23 +51,18 @@ Todas las tareas y actividades se organizarón en dos Sprints, de dos semanas ca
 
 ## 🚀 **Sprint #1 - Análisis Exploratorio de los Datos**
 
-<p align="left">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="GitHub Logo" width="50" />
-</p>
+<p> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="GitHub Logo" width="50" style="float: left; margin-right: 10px;"/>
 
 ### Creación del Repositorio Público en GitHub
 Una de las primeras tareas clave del proyecto fue la creación de un repositorio público en GitHub. Esto permitió:
 - **Centralizar la gestión del código:** Todos los archivos y scripts del proyecto se almacenan de manera ordenada en el repositorio, lo que facilita el acceso y la colaboración.
 - **Facilitar la colaboración:** Al ser un repositorio público, cualquier miembro del equipo, o incluso colaboradores externos, pueden revisar, sugerir mejoras o hacer contribuciones al proyecto.
 - **Control de versiones:** Gracias a GitHub, el control de versiones del código y los datos asociados es sencillo, lo que asegura que los cambios importantes sean rastreados y se puedan revertir en caso necesario.
-  
-El repositorio también incluye documentación básica sobre el proyecto y los archivos, organizada en carpetas según la tarea a la cual se vinculan, imágenes y un archivo README que describe el flujo del proyecto.
 
-<p align="left">
-  <img src="Imagenes/file-earmark-bar-graph-svgrepo-com.svg" alt="EDA Icon" style="width:100px;"/>
+El repositorio también incluye documentación básica sobre el proyecto y los archivos, organizada en carpetas según la tarea a la cual se vinculan, imágenes y un archivo README que describe el flujo del proyecto.
 </p>
 
-### Selección de los archivos
+### 📄 Selección de los archivos
 La selección de los archivos relevantes es un paso fundamental en el análisis exploratorio. En esta fase, se eligieron los csv que contienen los datos más completos y útiles para el análisis de rendimiento de los jugadores, considerando las variables necesarias para los análisis posteriores.
 
 ### 🔄 **ETL** - Extracción, Transformación y Carga de Datos
