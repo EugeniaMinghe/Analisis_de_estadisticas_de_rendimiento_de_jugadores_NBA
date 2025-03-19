@@ -8,11 +8,11 @@
 - **EDA_Graficos**: Archivo Jupyter Notebook donde ilustramos diferentes visualizaciones para luego insertarlas en el Dashboard.
 - **Presentacion**: Archivo Power Point con la presentación del proyecto.
 
-<p align='center'>
-<img src="https://img.icons8.com/?size=100&id=C9HqHuzEeNZP&format=png&color=000000" width='50'> 
-
-[Click aqui para ver la Presentación](https://docs.google.com/presentation/d/1j4f3uanWBZb80OOanFRnsJBopGnMMB6b/edit#slide=id.p1)
-</p>
+<h3 align="center">☕Presentación:</h3>
+<div align='center'>
+  <a href="https://docs.google.com/presentation/d/1j4f3uanWBZb80OOanFRnsJBopGnMMB6b/edit#slide=id.p1">
+  <img src="https://img.icons8.com/?size=100&id=C9HqHuzEeNZP&format=png&color=000000" alt='Presentacion" width='80'> 
+</div>
 
 ## 🛠️ Herramientas Utilizadas
 
