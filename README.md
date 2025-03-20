@@ -128,13 +128,13 @@ Estas medidas de seguridad permiten garantizar la integridad de los datos, prote
 
 ## 🚀 **Automatización de la Ingesta de Datos** 
 
-### 1. 📂 **Transferencia de Archivos al Bucket usando Cloud Storage Transfer Service**
+### 1. 📂 **Transferencia de Archivos desde Google Drive al Bucket usando Cloud Storage Transfer Service**
 **Creación de un Trabajo en Cloud Storage Transfer Service:**
-A través de **Storage Transfer Service** disponible en Google Cloud se crea un nuevo trabajo de transferencia, detallando:
-   - **Origen:** Bucket de Google Cloud Storage (`to_move`) como la fuente de datos (recibe los csv nuevos con las estadísticas de los jugadores semanalmente).
+A través de **Storage Transfer Service** disponible en Google Cloud se crea un nuevo trabajo de transferencia (**Lista de URL**), detallando:
+   - **Origen:** Bucket de Google Cloud Storage (`to_move`) como la fuente de datos (almacena un archivo .tsv con el link a la carpeta de Google Drive que recibe los csv nuevos con las estadísticas de los jugadores semanalmente).
    - **Destino:** Bucket de Google Cloud Storage (`to_database`).
    - **Configuración:**
-     - La transferencia se ejecuta los días domingo de cada semana transfiriendo los archivos que fueron modificados unas horas antes de las 22:00 hs.
+     - La transferencia se ejecuta los días domingo de cada semana transfiriendo los archivos cargados al drive.
      - Incluye todos los archivos en el bucket específicado como origen.
 Configuramnos la frecuencia del trabajo para que se ejecute semanalmente, todos los domingos. Verificamos la configuración y se **"Crear trabajo"**.
 
