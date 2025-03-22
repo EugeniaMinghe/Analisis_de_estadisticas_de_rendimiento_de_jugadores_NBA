@@ -1,4 +1,21 @@
-﻿## 📖 DICCIONARIO DE DATOS
+<p align="center">
+  <img src="../Imagenes/Gametime%20Stats%20logo%20png.png" alt="Gametime Stats Logo" width="200">
+</p>
+
+📌Esta carpeta contiene los archivos CSV resultantes del proceso de ETL, en combinación con el Jupyter Notebook con el código empleado para el ETL y un diccionario con el detalle de informaicón contenido en cada tabla.
+
+## 📂 Estructura de la Carpeta
+
+-  **ETL.ipynb**: Archivo de Jupyter Notebook con el código de Python empelado en el ETL.
+- **Readme.txt (info. contenido tablas. csv)**: Diccionario de los datos en formato de texto. 
+- **.csv**: Tablas en formato csv (la información contenida en cada una de ellas detallada a continuación en el **Diccionario de datos**)
+
+## 🛠️ Herramientas Utilizadas
+
+- Python (Pandas, NumPy)
+- Jupyter Notebook
+
+## 📖 DICCIONARIO DE DATOS
 
 Incluye información sobre el contenido de las columnas de las tablas (en formato .csv) más relevantes incluidas en la carpeta “ETL” del proyecto “Análisis de estadísticas de rendimiento de jugadores de la NBA”.
 <p align='left'>
