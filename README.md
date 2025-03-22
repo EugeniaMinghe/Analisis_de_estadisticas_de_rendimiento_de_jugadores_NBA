@@ -108,7 +108,7 @@ Para los jugadores presentes en la tabla **PlayerStatistics** se generó una nue
 
 ## 🗃️ Diagrama Entidad-Relación
 
-Con las PKs (Primary Keys) y las FK (Foreign Keys) ya establecidas en cada tabla, permitiendo la vinulación entre nuestras tablas y asegurando así su integridad referencial, se construyó el diagrama de Entidad-Relación en SQL Server, y luego solo esquematizó en Lucid [aquí](https://lucid.app/lucidchart/2108a42f-89c5-4a1a-a83e-8a02225f43b3/edit?invitationId=inv_8b675668-152b-4454-8bfd-d4e3fa8e5344&page=0_0#). **Es importante aclarar que las PKs fueron asignadas a campos que identifiquen de manera única los registros de las respectivas tablas.**
+Con las PKs (Primary Keys) y las FK (Foreign Keys) ya establecidas en cada tabla, permitiendo la vinulación entre nuestras tablas y asegurando así su integridad referencial, se construyó el diagrama de Entidad-Relación en SQL Server, y luego solo esquematizó en Lucid [aquí](https://lucid.app/publicSegments/view/46ff3eca-2e7c-4966-b24d-6d5411212be4/image.jpeg). **Es importante aclarar que las PKs fueron asignadas a campos que identifiquen de manera única los registros de las respectivas tablas.**
 
 ## 🔒 **Seguridad de la Base de Datos en Google Cloud**  
 
