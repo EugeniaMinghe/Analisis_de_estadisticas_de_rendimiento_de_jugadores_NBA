@@ -6,6 +6,7 @@
 ## 📂 Estructura de la Carpeta
 
 - **EDA_Graficos**: Archivo Jupyter Notebook donde ilustramos diferentes visualizaciones para luego insertarlas en el Dashboard.
+- **eda_games_lakers_fernando**: Archivo Jupyter Notebook donde ilustramos diferentes visualizaciones para luego insertarlas en el Dashboard.
 - **Presentacion**: Archivo Power Point con la presentación del proyecto.
 
 <h3 align="center">☕Presentación:</h3>
