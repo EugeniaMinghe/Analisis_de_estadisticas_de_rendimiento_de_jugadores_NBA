@@ -171,7 +171,7 @@ Para garantizar una colaboración efectiva entre todos los miembros del equipo, 
 ### 2. :outbox_tray: **Importación de Datos a Power BI desde BigQuery**
 Para integrar los datos almacenados en Google Cloud, se configuró una conexión directa entre Power BI y BigQuery, aprovechando su robustez para gestionar grandes volúmenes de datos y realizar análisis avanzados.
 
-### 3. :pushpin: **Selección de Tablas Relevantes:**  
+### 3. :pushpin: **Selección de Tablas Relevantes**  
   - Se incluyeron tablas filtradas y procesadas en el ETL, como `Players`, `PlayerStatistics`, `GamesLakers`, `PlayersLAL`, `Teams`, y `OtherStats`.
   - Cada tabla fue revisada para confirmar la precisión de sus columnas y datos.
 
@@ -233,7 +233,7 @@ Realiza una comparación detallada entre los tres jugadores de mejor desempeño 
 -	**Uso y Propósito:** El dashboard "Top 3" es una herramienta crucial para el cuerpo técnico y analistas, permitiéndoles enfocar esfuerzos en mejorar áreas específicas de los jugadores con menor desempeño y maximizar el impacto de los jugadores destacados. La comparación visual y estadística facilita la identificación rápida de patrones y decisiones estratégicas basadas en datos.
 
   
-### **Dashboard "Prospectos:"**
+### **Dashboard "Prospectos":**
 Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas más relevantes del baloncesto en 2025. Proporciona un análisis detallado de sus estadísticas clave, porcentajes de efectividad e información general.
 -	**Métricas y Estadísticas Clave:** Se destacan estadísticas importantes que reflejan el desempeño reciente de los prospectos, como: asistencias, rebotes, puntos por juego y robos. Además, también se incluyen porcentajes de tiros.
 
