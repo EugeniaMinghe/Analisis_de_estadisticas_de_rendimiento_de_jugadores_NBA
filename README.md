@@ -160,6 +160,85 @@ Aceptamos **"Crear"** el trabajo.
 - **Seguimiento en Tiempo Real:** El monitoreo continuo garantiza que el proceso de transferencia, carga y automatización se ejecute de manera correcta, brindando mayor confiabilidad en la gestión de los datos.  
 
 ---
+## 🚀 **Sprint #2 – Desarrollo del Reporte**
+
+### :bar_chart: **Creación del Archivo .pbix y Espacio de Trabajo en Power BI Service**
+Una vez completados los procesos de ETL y la organización de la base de datos, el siguiente paso fue iniciar el desarrollo del archivo `.pbix`. Este actúa como el núcleo para el diseño del reporte y dashboard interactivo, consolidando las visualizaciones necesarias para el análisis de los datos de los Lakers.
+
+### 1. :raised_hands: **Configuración del Espacio de Trabajo en Power BI Service**
+Para garantizar una colaboración efectiva entre todos los miembros del equipo, se creó un espacio de trabajo dedicado en Power BI Service. Este espacio centraliza los recursos del proyecto permitiendo una mejor interacción. Una vez diseñado localmente, el archivo `.pbix` fue publicado en Power BI Service, facilitando el acceso y colaboración sobre los reportes y dashboards generados.
+
+### 2. :outbox_tray: **Importación de Datos a Power BI desde BigQuery**
+Para integrar los datos almacenados en Google Cloud, se configuró una conexión directa entre Power BI y BigQuery, aprovechando su robustez para gestionar grandes volúmenes de datos y realizar análisis avanzados.
+
+### 3. :pushpin: **Selección de Tablas Relevantes:**  
+  - Se incluyeron tablas filtradas y procesadas en el ETL, como `Players`, `PlayerStatistics`, `GamesLakers`, `PlayersLAL`, `Teams`, y `OtherStats`.
+  - Cada tabla fue revisada para confirmar la precisión de sus columnas y datos.
+
+### 4. :bookmark_tabs: **Incorporación de Tablas Adicionales**
+- **Tabla de Calendario:**  
+  Se incluyó una tabla calendario la cual es esencial para relacionar temporalmente las métricas de los jugadores, facilitando análisis basados en periodos específicos.
+- **Tabla de Prospectos:** Se integró una tabla adicional denominada Prospectos, que contiene información estadística de jóvenes promesas del baloncesto para el año 2025. Los datos provienen del conjunto " 2025 NBA Draft Prospects Stats” disponible [aquí]( https://basketball.realgm.com/nba/draft/prospects/stats) y ofrecen métricas clave como puntos por partido, eficiencia y contribución al equipo en ligas menores y programas universitarios.
+
+### 5. :card_file_box:**Configuración del Modelo de Datos**
+- Relación de las tablas importadas en Power BI mediante claves primarias y foráneas, garantizando la integridad referencial de los datos.
+- Implementación de un modelo interconectado que permitió análisis dinámicos y personalizados.
+
+Con esta configuración, Power BI se estableció como un entorno versátil para el análisis y la visualización de datos.
+
+## :abacus: **Creación de Medidas y Columnas Necesarias para el Análisis**
+Para enriquecer los datos, se crearon medidas y columnas calculadas en Power BI que facilitaron el análisis de métricas clave del rendimiento del equipo y jugadores.
+
+- **Columnas Calculadas**: Las columnas calculadas se desarrollaron para agregar información que no estaba presente originalmente en las tablas importadas. Algunos ejemplos relevantes incluyen:
+
+- **Medidas Calculadas**: Las medidas calculadas permitieron obtener insights para el análisis de tendencias y patrones. Estas medidas de efectividad, promedio y porcentajes, profundizan en la efectividad del equipo y los jugadores. Entre ellas destacan:
+  - **Promedio de Puntos por Partido:** Se desarrolló una medida para calcular el promedio de puntos por partido de los jugadores.
+  - **Asistencias Efectivas:** Calcula la proporción de asistencias de los Lakers en relación con el total de puntos anotados por el equipo en sus partidos, proporcionando una métrica que representa la eficiencia del equipo al transformar asistencias en puntos.
+  - **Victorias y Derrotas:** Para evaluar el rendimiento del equipo, se crearon medidas que calculan la cantidad de partidos ganados y la cantidad de partidos perdidos por los Lakers como local y como visitante
+  
+Estas medidas y columnas calculadas consolidaron un modelo analítico robusto que sirvió como base para la generación de insights estratégicos y visualizaciones en los dashboards interactivos.
+
+## :chart_with_upwards_trend: Diseño de los Reportes y Gráficos Utilizados.
+El diseño de reportes y gráficos en esta etapa se enfocó en crear dashboards interactivos y dinámicos, cada uno orientado a proporcionar información clara y precisa según los objetivos del análisis.
+
+### **Dashboard "Team":**
+Proporciona una visión integral del rendimiento del equipo Los Angeles Lakers, con un enfoque en métricas clave tanto como local como visitante, además de porcentajes de efectividad. Esta diseñado para facilitar el análisis dinámico de las temporadas, permitiendo a los usuarios comprender las fortalezas y áreas de mejora del equipo.
+-	**Filtros Dinámicos:** Incluye botones interactivos para seleccionar temporadas específicas como Pretemporada, Regular, Playoffs y los años 2020-2021, 2021-2022, 2022-2023.
+-	**Uso y Propósito:** Permite al equipo técnico y analistas identificar patrones clave en el rendimiento de los Lakers, facilitando decisiones estratégicas basadas en datos precisos. La información general y los gráficos interactivos hacen que sea una herramienta esencial para comprender el impacto de factores como eficiencia en tiros y rebotes en los resultados del equipo.
+  
+### **Dashboard "Players":** 
+Se enfoca en proporcionar una vista completa del rendimiento individual de los jugadores activos de Los Angeles Lakers. Este dashboard está diseñado para analizar en detalle las métricas clave y estadísticas de cada jugador, facilitando la comparación y evaluación por posiciones.
+-	**Puntos por Posición:**
+Gráfico de barras que muestra los puntos totales anotados por los jugadores clasificados según su posición: ala-pívot (PF), escolta (SG), pívot (C), base (PG) y alero (SF). Este gráfico permite identificar las posiciones que aportan mayor cantidad de puntos al equipo.
+-	**Faltas y Turnovers por Posición:** Gráfico de barras comparativo que presenta la cantidad de faltas personales y pérdidas de balón (turnovers) según la posición de los jugadores. Útil para evaluar la disciplina y control del balón por rol dentro del equipo.
+
+-	**Relación entre Puntos, Edad y Minutos Jugados:** Gráfico de dispersión que analiza cómo los puntos promedio anotados por los jugadores se relacionan con su edad y minutos jugados, categorizados por posición (C, PF, PG, SF, SG). Ideal para identificar tendencias de desempeño según la experiencia y tiempo en cancha.
+
+
+-	**Estadísticas de Jugadores:** Gráfico de radar que detalla diferentes métricas como: tiros de campo, asistencias, bloqueos, tiros libres, entre otras. Permite visualizar de manera efectiva las fortalezas y áreas de mejora de los jugadores.
+-	**Lista de Jugadores Activos:** A la derecha del dashboard se incluye una lista interactiva con los nombres de los jugadores activos.
+
+-	**Filtros por Posición:** Incluye un filtro dinámico que permite seleccionar una posición específica para analizar solo a los jugadores que desempeñan ese rol.
+
+
+-	**Uso y Propósito:** El dashboard "Players" está diseñado para proporcionar insights detallados que ayudan a evaluar el desempeño de cada jugador de forma individual. Al incorporar gráficos y filtros interactivos, este dashboard se convierte en una herramienta fundamental para identificar jugadores clave y explorar sus aportaciones al rendimiento general del equipo.
+  
+### **Dashboard "Top 3":**
+Realiza una comparación detallada entre los tres jugadores de mejor desempeño y los tres jugadores con menor rendimiento en el equipo de Los Angeles Lakers, utilizando una variedad de métricas clave. 
+-	**Comparación de Rendimiento:** muestra contrastes estadísticos esenciales como: asistencias, rebotes, robos, promedio de minutos jugados y promedio de puntos.
+
+-	**Enfoque en Posiciones:** El dashboard permite identificar la posición específica de cada jugador comparado (C, PG, SF, etc.), proporcionando contexto sobre su rol en el equipo.
+
+
+-	**Uso y Propósito:** El dashboard "Top 3" es una herramienta crucial para el cuerpo técnico y analistas, permitiéndoles enfocar esfuerzos en mejorar áreas específicas de los jugadores con menor desempeño y maximizar el impacto de los jugadores destacados. La comparación visual y estadística facilita la identificación rápida de patrones y decisiones estratégicas basadas en datos.
+
+  
+### **Dashboard "Prospectos:"**
+Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas más relevantes del baloncesto en 2025. Proporciona un análisis detallado de sus estadísticas clave, porcentajes de efectividad e información general.
+-	**Métricas y Estadísticas Clave:** Se destacan estadísticas importantes que reflejan el desempeño reciente de los prospectos, como: asistencias, rebotes, puntos por juego y robos. Además, también se incluyen porcentajes de tiros.
+
+-	**Uso Estratégico:** Este dashboard no solo analiza las estadísticas básicas, sino que también sirve para evaluar fortalezas, debilidades y consistencia en el desempeño de los prospectos, ayudando a determinar qué jugadores podrían ser incorporados a la franquicia.
+---
 
 ## 🖥️ **Stack Tecnológico y Herramientas**
 <p align="center">
