@@ -242,7 +242,7 @@ Gráfico de barras que muestra los puntos totales anotados por los jugadores cla
 
 
 -	**Estadísticas de Jugadores:** Gráfico de radar que detalla diferentes métricas como: tiros de campo, asistencias, bloqueos, tiros libres, entre otras. Permite visualizar de manera efectiva las fortalezas y áreas de mejora de los jugadores.
--	**Lista de Jugadores Activos:** A la derecha del dashboard se incluye una lista interactiva con los nombres de los jugadores activos.
+-	**Filtros por Jugadores Activos:** A la derecha del dashboard se incluye un filtro con los nombres de los jugadores activos para poder evaluar sus estadísticas independientemente.
 
 -	**Filtros por Posición:** Incluye un filtro dinámico que permite seleccionar una posición específica para analizar solo a los jugadores que desempeñan ese rol.
 
