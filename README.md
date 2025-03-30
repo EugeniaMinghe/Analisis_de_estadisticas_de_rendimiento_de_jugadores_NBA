@@ -178,7 +178,7 @@ Para integrar los datos almacenados en Google Cloud, se configuró una conexión
 ### 4. :bookmark_tabs: **Incorporación de Tablas Adicionales**
 - **Tabla de Calendario:**  
   Se incluyó una tabla calendario la cual es esencial para relacionar temporalmente las métricas de los jugadores, facilitando análisis basados en periodos específicos.
-- **Tabla de Prospectos:** Se integró una tabla adicional denominada Prospectos, que contiene información estadística de jóvenes promesas del baloncesto para el año 2025. Los datos provienen del conjunto " 2025 NBA Draft Prospects Stats” disponible [aquí]( https://basketball.realgm.com/nba/draft/prospects/stats) y ofrecen métricas clave como puntos por partido, eficiencia y contribución al equipo en ligas menores y programas universitarios.
+- **Tabla de Prospects:** Se integró una tabla adicional denominada Prospectos, que contiene información estadística de jóvenes promesas del baloncesto para el año 2025. Los datos provienen del conjunto " 2025 NBA Draft Prospects Stats” disponible [aquí]( https://basketball.realgm.com/nba/draft/prospects/stats) y ofrecen métricas clave como puntos por partido, eficiencia y contribución al equipo en ligas menores y programas universitarios.
 
 ### 5. :card_file_box:**Configuración del Modelo de Datos**
 - Relación de las tablas importadas en Power BI mediante claves primarias y foráneas, garantizando la integridad referencial de los datos.
@@ -190,6 +190,29 @@ Con esta configuración, Power BI se estableció como un entorno versátil para 
 Para enriquecer los datos, se crearon medidas y columnas calculadas en Power BI que facilitaron el análisis de métricas clave del rendimiento del equipo y jugadores.
 
 - **Columnas Calculadas**: Las columnas calculadas se desarrollaron para agregar información que no estaba presente originalmente en las tablas importadas. Algunos ejemplos relevantes incluyen:
+
+    - **Tabla `GamesLakers`**
+      - **PrimerAño:** Indica el primer año en que se registró información para una temporada de la NBA en la tabla.
+      - **TemporadaNBA:** Identifica la temporada de la NBA asociada a cada registro. Proporciona un contexto claro para los datos relacionados con partidos basados en temporadas.
+    
+    - **Tabla `PlayersLAL`**
+      - **AñoOrden:** Define un orden cronológico basado en los años para facilitar la organización y análisis de datos históricos.
+      - **Combinada:**  Utiliza la función `switch` de DAX para asignar a cada jugador un enlace directo a su imagen.
+      - **IDImagen:** Genera un identificador único para las imágenes asociadas a cada jugador, asegurando un manejo organizado de los archivos visuales.
+      - **ImagenURL:** Incluye el enlace directo a la imagen de cada jugador, permitiendo la integración visual en dashboards y reportes.
+      - **Prefijo:** Define un elemento fijo utilizado como parte de las combinaciones o referencias únicas.
+      - **Sufijo:** Agrega un elemento dinámico complementario para las referencias únicas de los jugadores.
+
+
+    - **Tabla `Prospects`**
+      - **Imagenes:** Contiene las imágenes relacionadas con los prospectos, facilitando una identificación visual en reportes y análisis.
+      - **PlayerID:** Proporciona un identificador único para cada prospecto, asegurando su vinculación en el modelo de datos.
+      - **Posición:** Define la posición del prospecto en el campo de juego (PG, SG, SF, PF, C), permitiendo análisis basados en roles específicos.
+      - **TRB:** Representa los rebotes totales realizados por cada prospecto, una métrica clave para evaluar su impacto en el juego.
+
+
+Estas columnas calculadas fueron diseñadas para optimizar el modelo de datos y garantizar la claridad y utilidad en las visualizaciones desarrolladas posteriormente. Su incorporación permitió una mejor integración y análisis interconectado entre las métricas del equipo y los prospectos.
+
 
 - **Medidas Calculadas**: Las medidas calculadas permitieron obtener insights para el análisis de tendencias y patrones. Estas medidas de efectividad, promedio y porcentajes, profundizan en la efectividad del equipo y los jugadores. Entre ellas destacan:
   - **Promedio de Puntos por Partido:** Se desarrolló una medida para calcular el promedio de puntos por partido de los jugadores.
