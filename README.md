@@ -12,6 +12,7 @@
 - [Objetivo principal](#objetivo-principal)  
 - [Fuentes de datos](#fuentes-de-datos)
 - [Sprint #1](#sprint-1)
+- [Sprint #2](#sprint-2)
 - [Stack Tecnológico y Herramientas](#stack-tecnológico-y-herramientas)
 - [Resultados y Conclusiones](#resultados-y-conclusiones)  
 
