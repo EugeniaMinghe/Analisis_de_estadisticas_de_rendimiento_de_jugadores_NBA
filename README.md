@@ -277,4 +277,4 @@ Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas 
 </p>
 
 ---
-## 📝 Resultados y Conclusiones
+## 📝 Conclusiones y Recomendaciones
