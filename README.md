@@ -173,12 +173,14 @@ Para garantizar una colaboración efectiva entre todos los miembros del equipo, 
 Para integrar los datos almacenados en Google Cloud, se configuró una conexión directa entre Power BI y BigQuery, aprovechando su robustez para gestionar grandes volúmenes de datos y realizar análisis avanzados.
 
 ### 3. :pushpin: **Selección de Tablas Relevantes**  
-  - Se incluyeron tablas filtradas y procesadas en el ETL, como `Players` (renombrada como `InfoPlayers`), `PlayerStatistics` (renombrada como `Players_LAL`), `GamesLakers` (renombrada como `Games`), `Teams` (renombrada como `InfoTeams`), y `OtherStats` (mantuvo el mismo nombre).
+  - Se incluyeron tablas filtradas y procesadas en el ETL, como `Players` (renombrada como `InfoPlayers`), `PlayerStatistics` (renombrada como `PlayersLAL`), `GamesLakers` (renombrada como `Games`), `Teams` (renombrada como `InfoTeams`), y `OtherStats` (mantuvo el mismo nombre).
   - Cada tabla fue revisada para confirmar la precisión de sus columnas y datos.
 
 ### 4. :bookmark_tabs: **Incorporación de Tablas Adicionales**
 - **Tabla de Calendario:**  
   Se incluyó una tabla calendario la cual es esencial para relacionar temporalmente las métricas de los jugadores, facilitando análisis basados en periodos específicos.
+- **Tabla de Medidas:**
+  Se incluyó una tabla de medidas que agrupara todas las métricas creadas durante la eboración del dashboard. De este modo, la organización del modelo de datos es más clara y eficiente (todas las medidas concetradas en única tabla y no dispersas entre las distintas tablas incluidas en el modelo facilita la navegación y la modificación y edición de las métricas), el rendimiento del modelo se ve optimizado (las consultas se mejoran), el mantenimiento es más sencillo (las medidas están centralizadas en una tabla evitando confusiones y errores si es necesario realizar cambios y el trabajo se ve optmizado ayudando a domunetar y estructurar mejor el modelo), y se evita la mezcla entre las medidas y las columnas calculadas en las diferentes tablas.    
 - **Tabla de Prospects:** Se integró una tabla adicional denominada Prospectos, que contiene información estadística de jóvenes promesas del baloncesto para el año 2025. Los datos provienen del conjunto " 2025 NBA Draft Prospects Stats” disponible [aquí]( https://basketball.realgm.com/nba/draft/prospects/stats) y ofrecen métricas clave como puntos por partido, eficiencia y contribución al equipo en ligas menores y programas universitarios.
 
 ### 5. :card_file_box:**Configuración del Modelo de Datos**
@@ -192,7 +194,7 @@ Para enriquecer los datos, se crearon medidas y columnas calculadas en Power BI 
 
 - **Columnas Calculadas**: Las columnas calculadas se desarrollaron para agregar información que no estaba presente originalmente en las tablas importadas. Algunos ejemplos relevantes incluyen:
 
-    - **Tabla `GamesLakers`**
+    - **Tabla `Games`**
       - **PrimerAño:** Indica el primer año en que se registró información para una temporada de la NBA en la tabla.
       - **TemporadaNBA:** Identifica la temporada de la NBA asociada a cada registro. Proporciona un contexto claro para los datos relacionados con partidos basados en temporadas.
     
