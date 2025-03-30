@@ -173,7 +173,7 @@ Para garantizar una colaboración efectiva entre todos los miembros del equipo, 
 Para integrar los datos almacenados en Google Cloud, se configuró una conexión directa entre Power BI y BigQuery, aprovechando su robustez para gestionar grandes volúmenes de datos y realizar análisis avanzados.
 
 ### 3. :pushpin: **Selección de Tablas Relevantes**  
-  - Se incluyeron tablas filtradas y procesadas en el ETL, como `Players`, `PlayerStatistics`, `GamesLakers`, `PlayersLAL`, `Teams`, y `OtherStats`.
+  - Se incluyeron tablas filtradas y procesadas en el ETL, como `Players` (renombrada como `InfoPlayers`), `PlayerStatistics` (renombrada como `Players_LAL`), `GamesLakers` (renombrada como `Games`), `Teams` (renombrada como `InfoTeams`), y `OtherStats` (mantuvo el mismo nombre).
   - Cada tabla fue revisada para confirmar la precisión de sus columnas y datos.
 
 ### 4. :bookmark_tabs: **Incorporación de Tablas Adicionales**
