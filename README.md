@@ -70,9 +70,9 @@ La selección de los archivos relevantes es un paso fundamental en el análisis 
 
 El filtrado de las tablas se realizó mediante Python en Visual Studio Code, con el objetivo de eliminar los datos que consideramos innecesarios para el análisis (reduciendo el consumo de recursos), modificar el tipo de dato cuando se requiriese y normalizar el nombre de las columnas en las diferentes tablas. 
 
-- **common_player_info**: filtrado por el equipo de interés (Lakers), conversión de columnas a los tipos de datos adecuados (birthdate, from year, to year), elimicaión de ocho columnas (`player_slug`, `display_last_comma_first`, `display_fi_last`, `playercode`, `team_name`, `team_abbreviation`, `team_code`, `team_city` -las últimas cuatro porque esta información está en la tabla `info_teams`-), imputación de valores nulos con "No Data" en tres columnas (jersey, draft_round y draft_number), y cambio de nombre de las columnas `person_id` por `player_id` y `display_first_last` por `full_name`. Guardado como: `common_player_info_final`.
+- **common_player_info**: filtrado por el equipo de interés (Lakers), conversión de columnas a los tipos de datos adecuados (birthdate, from year, to year), eliminación de ocho columnas (`player_slug`, `display_last_comma_first`, `display_fi_last`, `playercode`, `team_name`, `team_abbreviation`, `team_code`, `team_city` -las últimas cuatro porque esta información está en la tabla `info_teams`-), imputación de valores nulos con "No Data" en tres columnas (jersey, draft_round y draft_number), y cambio de nombre de las columnas `person_id` por `player_id` y `display_first_last` por `full_name`. Guardado como: `common_player_info_final`.
 
-- **draft_history**: filtrado por el equipo de interés (LAL), eliminación de tres columnas (`team_city`, `team_name` y `team_abbreviation`-porque la informaicón está en la tabla `info_teams`-) y cambio de nombre de las columnas `person_id` por `player_id` y `player_name` por `full_name`. Guardado como `draft_history_final`.
+- **draft_history**: filtrado por el equipo de interés (LAL), eliminación de tres columnas (`team_city`, `team_name` y `team_abbreviation`-porque la información está en la tabla `info_teams`-) y cambio de nombre de las columnas `person_id` por `player_id` y `player_name` por `full_name`. Guardado como `draft_history_final`.
 
 - **games_lakers_tres_temporadas**: filtrado por el equipo de interés (LAL) y por la fecha del juego para tener las últimas tres temporadas que es lo que vamos a analizar y conversión de columnas a los tipos de datos adecuados (gamedate). 
 
@@ -109,7 +109,7 @@ Para los jugadores presentes en la tabla **PlayerStatistics** se generó una nue
 
 ## 🗃️ Diagrama Entidad-Relación
 
-Con las PKs (Primary Keys) y las FK (Foreign Keys) ya establecidas en cada tabla, permitiendo la vinulación entre nuestras tablas y asegurando así su integridad referencial, se construyó el diagrama de Entidad-Relación en SQL Server, y luego solo esquematizó en Lucid [aquí](https://lucid.app/publicSegments/view/46ff3eca-2e7c-4966-b24d-6d5411212be4/image.jpeg). **Es importante aclarar que las PKs fueron asignadas a campos que identifiquen de manera única los registros de las respectivas tablas.**
+Con las PKs (Primary Keys) y las FK (Foreign Keys) ya establecidas en cada tabla, permitiendo la vinculación entre nuestras tablas y asegurando así su integridad referencial, se construyó el diagrama de Entidad-Relación en SQL Server, y luego se realizó el esquema en Lucid [aquí](https://lucid.app/publicSegments/view/46ff3eca-2e7c-4966-b24d-6d5411212be4/image.jpeg). **Es importante aclarar que las PKs fueron asignadas a campos que identifiquen de manera única los registros de las respectivas tablas.**
 
 ## 🔒 **Seguridad de la Base de Datos en Google Cloud**  
 
@@ -180,7 +180,7 @@ Para integrar los datos almacenados en Google Cloud, se configuró una conexión
 - **Tabla de Calendario:**  
   Se incluyó una tabla calendario la cual es esencial para relacionar temporalmente las métricas de los jugadores, facilitando análisis basados en periodos específicos.
 - **Tabla de Medidas:**
-  Se incluyó una tabla de medidas que agrupara todas las métricas creadas durante la eboración del dashboard. De este modo, la organización del modelo de datos es más clara y eficiente (todas las medidas concetradas en única tabla y no dispersas entre las distintas tablas incluidas en el modelo facilita la navegación y la modificación y edición de las métricas), el rendimiento del modelo se ve optimizado (las consultas se mejoran), el mantenimiento es más sencillo (las medidas están centralizadas en una tabla evitando confusiones y errores si es necesario realizar cambios y el trabajo se ve optmizado ayudando a domunetar y estructurar mejor el modelo), y se evita la mezcla entre las medidas y las columnas calculadas en las diferentes tablas.    
+  Se incluyó una tabla de medidas que agrupara todas las métricas creadas durante la elaboración del dashboard. De este modo, la organización del modelo de datos es más clara y eficiente (todas las medidas concentradas en única tabla y no dispersas entre las distintas tablas incluidas en el modelo facilita la navegación y la modificación y edición de las métricas), el rendimiento del modelo se ve optimizado (las consultas se mejoran), el mantenimiento es más sencillo (las medidas están centralizadas en una tabla evitando confusiones y errores si es necesario realizar cambios y el trabajo se ve optmizado ayudando a domunetar y estructurar mejor el modelo), y se evita la mezcla entre las medidas y las columnas calculadas en las diferentes tablas.    
 - **Tabla de Prospects:** Se integró una tabla adicional denominada Prospectos, que contiene información estadística de jóvenes promesas del baloncesto para el año 2025. Los datos provienen del conjunto " 2025 NBA Draft Prospects Stats” disponible [aquí]( https://basketball.realgm.com/nba/draft/prospects/stats) y ofrecen métricas clave como puntos por partido, eficiencia y contribución al equipo en ligas menores y programas universitarios.
 
 ### 5. :card_file_box:**Configuración del Modelo de Datos**
@@ -278,3 +278,5 @@ Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas 
 
 ---
 ## 📝 Conclusiones y Recomendaciones
+
+
