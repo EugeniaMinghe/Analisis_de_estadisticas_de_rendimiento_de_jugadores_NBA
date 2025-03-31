@@ -1,6 +1,65 @@
-﻿## 📖 DICCIONARIO DE DATOS
+<p align="center">
+  <img src="../Imagenes/Gametime%20Stats%20logo%20png.png" alt="Gametime Stats Logo" width="200">
+</p>
+
+📌Esta carpeta contiene los archivos CSV resultantes del proceso de ETL, en combinación con el Jupyter Notebook con el código empleado para el ETL y un diccionario con el detalle de informaicón contenido en cada tabla.
+
+## 📂 Estructura de la Carpeta
+
+-  **ETL.ipynb**: Archivo de Jupyter Notebook con el código de Python empelado en el ETL.
+- **Readme.txt (info. contenido tablas. csv)**: Diccionario de los datos en formato de texto. 
+- **.csv**: Tablas en formato csv (la información contenida en cada una de ellas detallada a continuación en el **Diccionario de datos**)
+
+## 🛠️ Herramientas Utilizadas
+
+- Python (Pandas, NumPy)
+- Jupyter Notebook
+
+## 📖 DICCIONARIO DE DATOS
 
 Incluye información sobre el contenido de las columnas de las tablas (en formato .csv) más relevantes incluidas en la carpeta “ETL” del proyecto “Análisis de estadísticas de rendimiento de jugadores de la NBA”.
+
+<p align='left'>
+<img src="https://img.icons8.com/?size=100&id=SgWL3OsGZDVs&format=png&color=000000" width="50"> 
+
+**completo_21_24 & lakers_21_24**
+
+|**Nombre columna**|**Tipo**|**Descripción**|**Ejemplo**|
+| :- | :- | :- | :- |
+|Rk|entero|Ranking o número de fila en la tabla.|76003|
+|Player|string|Nombre del jugador.|Kareem|
+|Pos|string|Posición en la cancha|C|
+|Age|entero|Edad del jugador en la temporada correspondiente.|26|
+|TM|string|Equipo en el que jugó el jugador durante la temporada|LAL|
+|G|entero|Partidos jugados en la temporada.|6|
+|GS|entero|Partidos en los que fue titular (Games Started)|3|
+|MP|entero|Minutos jugados por partido en promedio.|7|
+|FG|float|Canastas de campo encestadas por partido.|13\.0|
+|FGA|float|Intentos de tiro de campo por partido.|225\.0|
+|FG%|float|Porcentaje de tiros de campo encestados (FG / FGA).|20\.0|
+|3P|float|Triples encestados por partido.|33\.0|
+|3PA|float|Intentos de triples por partido.|10\.0|
+|3P%|float|Porcentaje de triples encestados (3P / 3PA).|39\.0|
+|2P|float|Dobles encestados por partido.|11\.0|
+|2PA|float|Intentos de dobles por partido.|16\.0|
+|2P%|float|Porcentaje de dobles encestados (2P / 2PA).|19\.0|
+|eFG%|float|Porcentaje efectivo de tiros de campo, que ajusta el FG% considerando que un triple vale más que un doble. |19\.0|
+|FT|float|Tiros libres encestados por partido.|4\.0|
+|FTA|float|Intentos de tiros libres por partido.|1\.0|
+|FT%|float|Porcentaje de tiros libres encestados (FT / FTA).|5\.0|
+|ORB|float|Rebotes ofensivos por partido.|19\.0|
+|DRB|float|Rebotes defensivos por partido.|1\.0|
+|TRB|float|Rebotes totales por partido (ORB + DRB).|2\.0|
+|AST|float|Asistencias por partido.|17\.0|
+|STL|float|Robos por partido.|2\.0|
+|BLK|float|Tapones (bloqueos) por partido.|6\.0|
+|TOV|float|Pérdidas de balón por partido.|11\.0|
+|PF|float|Faltas personales cometidas por partido.|14\.0|
+|PTS|float|Puntos anotados por partido.|48\.0|
+|type\_season|string|Tipo de temporada (puede ser regular para la temporada regular o playoffs para los playoffs).|regular|
+|season\_year|string|Año de la temporada (por ejemplo, 2021-2022).|2023\-2024|
+</p>
+
 <p align='left'>
 <img src="https://img.icons8.com/?size=100&id=N9rvnkaCrJ8h&format=png&color=000000" width="50"> 
 
