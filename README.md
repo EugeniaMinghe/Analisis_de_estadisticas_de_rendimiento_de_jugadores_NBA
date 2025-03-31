@@ -319,8 +319,8 @@ Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en can
 
 -Si se consideran estadísticas claves tanto defensivas como ofensivas tan solo 4 jugadores cumplen con los criterios de renovación establecidos. Mientras que, contemplando solo estsdísticas claves defensivas 10 jugadores cumplen con los criterios de renovación. Sugerimos tener en cuenta a,bos criterios y evaluar por posición de jugadores, ya que mantener una base amplia del plantel suele ser un aspecto clave y mantener solo 4 jugadores sería una renovación muy drásctica del equipo. 
 
-
-##💡 Recomendaciones
+---
+## 💡 Recomendaciones
 
 - Evaluar el progreso de los jugadores y realizar ajustes en el entrenamiento para optimizar el desempeño.  
 
