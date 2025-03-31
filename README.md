@@ -282,13 +282,13 @@ Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas 
 
 **Estadísticas del equipo:**
 
-La cantidad de victorias, tanto de local como de visitante, supera a la cantidad de derrotas que obtuvieron en los mismos ámbitos. Sin embargo, la diferencia entre victorias y derrotas en casa es de un 19%. Consideramos necesario que el Crypto.Com Arena sea un lugar donde los Lakers se hagan fuertes y que la victoria del equipo que visita sea un trabajo arduo. Para ello hay que mirar la cantidad de puntos en contra que reciben, rebotes ganados, robos, turnovers...
+La cantidad de victorias, tanto de local como de visitante, supera a la cantidad de derrotas que obtuvieron en los mismos ámbitos. Sin embargo, la diferencia entre victorias y derrotas en casa es de un 19%. Consideramos necesario que el Crypto.Com Arena sea un lugar donde los Lakers se hagan fuertes y que la victoria del equipo que visita sea un trabajo arduo. Para ello debemos evaluar la cantidad de puntos realizados y recibidos, los rebotes ganados, los robos convertidos, los turnovers y las asistencias efectivas, con el objetivo de detectar los aspectos que requieren mayor atención y focalizar en ellos para aumentar su eficacia.  
 
-La eficacia de rebotes defensivos es alta en comparación con la cantidad de puntos en contra, por lo tanto hay que aumentar la eficacia defensiva, reduciendo la cantidad de faltas y de pérdidas de posesión(TOV).
+La eficacia de rebotes defensivos es alta en comparación con la cantidad de puntos en contra, por lo tanto es indispensable incrementar la eficacia defensiva, reduciendo la cantidad de faltas y de pérdidas de posesión (TOV).
 
-Los porcentajes de tiros de campo (FG%) y de triples (3P%) ubican al equipo en el top 10. Una franquicia que compite por el anillo debe estar en el top 3 o como mínimo en el top 5. Aumentando en un punto estos porcentajes (FG%: de 47 a 48, y 3P%: de 35 a 36), se estaría cumpliendo el objetivo establecido previamente.
+Los porcentajes de tiros de campo (FG%) y de triples (3P%) ubican al equipo en el top 10. Una franquicia que compite por el anillo debe estar en el top 3 o como mínimo en el top 5. El aumento en un punto de estos porcentajes (FG%: de 47 a 48, y 3P%: de 35 a 36), permitiría cumplir el objetivo mencionado previamente.
 
-Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en cancha, tienen promedios muy bajos de FG%. A partir de esto es que empezamos a enfocarnos en las métricas por posición.
+Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en cancha, tienen promedios muy bajos de FG%. Considerando este punto decidimos enfocarnos en las métricas por posición resumidas a continaución.
 
 **Estadisticas por posición:**
 
@@ -317,8 +317,10 @@ Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en can
 
 - Lebron James es el jugador estrella, pero está en sus últimos años de carrera, por lo tanto es esperable que haya una merma a nivel físico. Consideramos importante rodearlo de jugadores talentosos y jóvenes, que puedan continuar con el legado tanto de la franquicia como de su MVP.
 
+-Si se consideran estadísticas claves tanto defensivas como ofensivas tan solo 4 jugadores cumplen con los criterios de renovación establecidos. Mientras que, contemplando solo estsdísticas claves defensivas 10 jugadores cumplen con los criterios de renovación. Sugerimos tener en cuenta a,bos criterios y evaluar por posición de jugadores, ya que mantener una base amplia del plantel suele ser un aspecto clave y mantener solo 4 jugadores sería una renovación muy drásctica del equipo. 
 
-**Recomendaciones:**
+
+##💡 Recomendaciones
 
 - Evaluar el progreso de los jugadores y realizar ajustes en el entrenamiento para optimizar el desempeño.  
 
