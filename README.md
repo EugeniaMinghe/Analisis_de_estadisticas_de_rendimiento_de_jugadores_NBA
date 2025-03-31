@@ -277,6 +277,53 @@ Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas 
 </p>
 
 ---
-## 📝 Conclusiones y Recomendaciones
+## 📝 Conclusiones 
 
+
+**Respecto a las estadísticas del equipo en general:**
+
+La cantidad de victorias, tanto de local como de visitante, supera a la cantidad de derrotas que obtuvieron en los mismos ámbitos. Sin embargo, la diferencia entre victorias y derrotas en casa es de un 19%. Consideramos necesario que el Crypto.Com Arena sea un lugar donde los Lakers se hagan fuertes y que la victoria del equipo que visita sea un trabajo arduo. Para ello hay que mirar la cantidad de puntos en contra que reciben, rebotes ganados, robos, turnovers...
+
+La eficacia de rebotes defensivos es alta en comparación con la cantidad de puntos en contra, por lo tanto hay que aumentar la eficacia defensiva, reduciendo la cantidad de faltas y de pérdidas de posesión(TOV).
+
+Los porcentajes de tiros de campo (FG%) y de triples (3P%) ubican al equipo en el top 10. Una franquicia que compite por el anillo debe estar en el top 3 o como mínimo top 5. Aumentando en un punto estos porcentajes(FG%: de 47 a 48, y 3P%: de 35 a 36), se estaría cumpliendo el objetivo establecido previamente.
+
+Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en cancha, tienen promedios muy bajos de FG%. A partir de esto es que empezamos a enfocarnos en las métricas por posición.
+
+**Estadisticas por posición:**
+
+- PG: Tienen un promedio de entre 25 y 35 años, de los cuales solo dos jugadores superan la barrera de los 10 puntos por partido. Son los que más turnovers tienen y los que más faltas cometen junto con los SG ("primera línea" de defensa en los ataques rivales).
+
+
+- SG: Son los  que más faltas hacen. Concentran la mayor cantidad de minutos y puntos en la franja etaria de los 20 a los 25 años. De estos, 4 superan el promedio de 10 pts por partido. El destacado en el puesto es Austin Reaves, con un promedio de 13 puntos por partido y una eficacia en triples del 34%.
+
+
+- SF: Son los que menos faltas y turnovers tienen. La estrella del equipo, Lebron James, promedia 30 puntos por partido. Quien lo sigue promedia 5 por partido.
+
+
+- PF: Tienen buena rotación, con 5 jugadores promediando los 10pts por partido. Sin embargo tienen un porcentaje alto de faltas y turnovers. 
+
+
+- C: Tienen como jugador destacado a Anthony Davis, liderando en minutos y puntos(más de 22 por temporada) y luego lo siguen jugadores muy experimentados(Deandre Jordan con 33 años y Dwight Howard con 36). Los jovenes tienen alrededor de 5 a 10 minutos de juego.
+Tienen un promedio bajo de TOV y moderado de faltas.
+
+
+**Estrategia Propuesta:**
+
+- Mejorar en un punto FG% y 3P%
+
+- Aumentar el promedio de puntos de aquellos jugadores que tienen menos minutos en cancha
+
+- Mejorar la eficacia defensiva. ↓ TOV y Faltas de PG
+
+- Lebron James es el jugador estrella, pero está en sus últimos años de carrera, por lo tanto es esperable que haya una merma a nivel físico. Consideramos      importante rodearlo de jugadores talentosos y jóvenes, que puedan continuar con el legado tanto de la franquicia como de su MVP.
+
+
+**Recomendaciones:**
+
+- Evaluar progreso de los jugadores y realizar ajustes en el entrenamiento para optimizar el desempeño.  
+
+- Evaluar la renovación de contrato para ciertos miembros del plantel. 
+
+- Considerar incorporar nuevos talentos que se alinean con las necesidades del equipo mejorando el desempeño general tanto de local como de visitante.
 
