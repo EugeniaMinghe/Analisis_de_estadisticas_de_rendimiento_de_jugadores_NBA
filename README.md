@@ -264,8 +264,12 @@ Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas 
 -	**Métricas y Estadísticas Clave:** Se destacan estadísticas importantes que reflejan el desempeño reciente de los prospectos, como: asistencias, rebotes, puntos por juego y robos. Además, también se incluyen porcentajes de tiros.
 
 -	**Uso Estratégico:** Este dashboard no solo analiza las estadísticas básicas, sino que también sirve para evaluar fortalezas, debilidades y consistencia en el desempeño de los prospectos, ayudando a determinar qué jugadores podrían ser incorporados a la franquicia.
----
 
+
+### ✅ **Dashboard "Conclusiones":**
+Presenta un resumen de las conclusiones obtenidas de todo el análisis (separadas por jugadores y renovaciones) en combinación con estrategias propuestas y recomendaciones. 
+
+---
 ## 🖥️ **Stack Tecnológico y Herramientas**
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
