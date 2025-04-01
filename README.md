@@ -227,12 +227,12 @@ Estas medidas y columnas calculadas consolidaron un modelo analítico robusto qu
 ## :chart_with_upwards_trend: Diseño de los Reportes y Gráficos Utilizados.
 El diseño de reportes y gráficos en esta etapa se enfocó en crear dashboards interactivos y dinámicos, cada uno orientado a proporcionar información clara y precisa según los objetivos del análisis.
 
-### **Dashboard "Team":**
+### 👥 **Dashboard "Team":**
 Proporciona una visión integral del rendimiento del equipo Los Angeles Lakers, con un enfoque en métricas clave tanto como local como visitante, además de porcentajes de efectividad. Esta diseñado para facilitar el análisis dinámico de las temporadas, permitiendo a los usuarios comprender las fortalezas y áreas de mejora del equipo.
 -	**Filtros Dinámicos:** Incluye botones interactivos para seleccionar temporadas específicas como Pretemporada, Regular, Playoffs y los años 2020-2021, 2021-2022, 2022-2023.
 -	**Uso y Propósito:** Permite al equipo técnico y analistas identificar patrones clave en el rendimiento de los Lakers, facilitando decisiones estratégicas basadas en datos precisos. La información general y los gráficos interactivos hacen que sea una herramienta esencial para comprender el impacto de factores como eficiencia en tiros y rebotes en los resultados del equipo.
   
-### **Dashboard "Players":** 
+### 🏀 **Dashboard "Players":** 
 Se enfoca en proporcionar una vista completa del rendimiento individual de los jugadores activos de Los Angeles Lakers. Este dashboard está diseñado para analizar en detalle las métricas clave y estadísticas de cada jugador, facilitando la comparación y evaluación por posiciones.
 -	**Puntos por Posición:**
 Gráfico de barras que muestra los puntos totales anotados por los jugadores clasificados según su posición: ala-pívot (PF), escolta (SG), pívot (C), base (PG) y alero (SF). Este gráfico permite identificar las posiciones que aportan mayor cantidad de puntos al equipo.
@@ -249,7 +249,7 @@ Gráfico de barras que muestra los puntos totales anotados por los jugadores cla
 
 -	**Uso y Propósito:** El dashboard "Players" está diseñado para proporcionar insights detallados que ayudan a evaluar el desempeño de cada jugador de forma individual. Al incorporar gráficos y filtros interactivos, este dashboard se convierte en una herramienta fundamental para identificar jugadores clave y explorar sus aportaciones al rendimiento general del equipo.
   
-### **Dashboard "Top 3":**
+### 🥇🥈🥉 **Dashboard "Top 3":**
 Realiza una comparación detallada entre los tres jugadores de mejor desempeño y los tres jugadores con menor rendimiento en el equipo de Los Angeles Lakers, utilizando una variedad de métricas clave. 
 -	**Comparación de Rendimiento:** muestra contrastes estadísticos esenciales como: asistencias, rebotes, robos, promedio de minutos jugados y promedio de puntos.
 
@@ -259,7 +259,7 @@ Realiza una comparación detallada entre los tres jugadores de mejor desempeño 
 -	**Uso y Propósito:** El dashboard "Top 3" es una herramienta crucial para el cuerpo técnico y analistas, permitiéndoles enfocar esfuerzos en mejorar áreas específicas de los jugadores con menor desempeño y maximizar el impacto de los jugadores destacados. La comparación visual y estadística facilita la identificación rápida de patrones y decisiones estratégicas basadas en datos.
 
   
-### **Dashboard "Prospectos":**
+### 🎯 **Dashboard "Prospectos":**
 Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas más relevantes del baloncesto en 2025. Proporciona un análisis detallado de sus estadísticas clave, porcentajes de efectividad e información general.
 -	**Métricas y Estadísticas Clave:** Se destacan estadísticas importantes que reflejan el desempeño reciente de los prospectos, como: asistencias, rebotes, puntos por juego y robos. Además, también se incluyen porcentajes de tiros.
 
@@ -280,7 +280,7 @@ Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas 
 ## 📝 Conclusiones 
 
 
-**Estadísticas del equipo:**
+🏀📊 **Estadísticas del equipo:**
 
 La cantidad de victorias, tanto de local como de visitante, supera a la cantidad de derrotas que obtuvieron en los mismos ámbitos. Sin embargo, la diferencia entre victorias y derrotas en casa es de un 19%. Consideramos necesario que el Crypto.Com Arena sea un lugar donde los Lakers se hagan fuertes y que la victoria del equipo que visita sea un trabajo arduo. Para ello debemos evaluar la cantidad de puntos realizados y recibidos, los rebotes ganados, los robos convertidos, los turnovers y las asistencias efectivas, con el objetivo de detectar los aspectos que requieren mayor atención y focalizar en ellos para aumentar su eficacia.  
 
@@ -290,7 +290,7 @@ Los porcentajes de tiros de campo (FG%) y de triples (3P%) ubican al equipo en e
 
 Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en cancha, tienen promedios muy bajos de FG%. Considerando este punto decidimos enfocarnos en las métricas por posición resumidas a continaución.
 
-**Estadisticas por posición:**
+🏀📍 **Estadisticas por posición:**
 
 - PG: Tienen un promedio de entre 25 y 35 años, de los cuales solo dos jugadores superan la barrera de los 10 puntos por partido. Son los que más turnovers tienen y los que más faltas cometen junto con los SG ("primera línea" de defensa en los ataques rivales).
 
@@ -307,7 +307,7 @@ Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en can
 - C: Tienen como jugador destacado a Anthony Davis, liderando en minutos y puntos (más de 22 por temporada) y luego lo siguen jugadores muy experimentados (Deandre Jordan con 33 años y Dwight Howard con 36). Los jovenes tienen alrededor de 5 a 10 minutos de juego. Presentan un promedio bajo de TOV y moderado de faltas.
 
 
-**Estrategia Propuesta:**
+🧠📈 **Estrategia Propuesta:**
 
 - Mejorar en un punto FG% y 3P%
 
@@ -317,7 +317,7 @@ Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en can
 
 - Lebron James es el jugador estrella, pero está en sus últimos años de carrera, por lo tanto es esperable que haya una merma a nivel físico. Consideramos importante rodearlo de jugadores talentosos y jóvenes, que puedan continuar con el legado tanto de la franquicia como de su MVP.
 
--Si se consideran estadísticas claves tanto defensivas como ofensivas tan solo 4 jugadores cumplen con los criterios de renovación establecidos. Mientras que, contemplando solo estsdísticas claves defensivas 10 jugadores cumplen con los criterios de renovación. Sugerimos tener en cuenta a,bos criterios y evaluar por posición de jugadores, ya que mantener una base amplia del plantel suele ser un aspecto clave y mantener solo 4 jugadores sería una renovación muy drásctica del equipo. 
+⭐ Si se consideran estadísticas claves tanto defensivas como ofensivas tan solo 4 jugadores cumplen con los criterios de renovación establecidos. Mientras que, contemplando solo estsdísticas claves defensivas 10 jugadores cumplen con los criterios de renovación. Sugerimos tener en cuenta a,bos criterios y evaluar por posición de jugadores, ya que mantener una base amplia del plantel suele ser un aspecto clave y mantener solo 4 jugadores sería una renovación muy drásctica del equipo. 
 
 ---
 ## 💡 Recomendaciones
