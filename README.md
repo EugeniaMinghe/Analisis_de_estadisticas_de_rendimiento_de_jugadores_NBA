@@ -331,7 +331,7 @@ Los jugadores que más rotan y que por lo tanto cuentan con menos minutos en can
 
 - Lebron James es el jugador estrella, pero está en sus últimos años de carrera, por lo tanto es esperable que haya una merma a nivel físico. Consideramos importante rodearlo de jugadores talentosos y jóvenes, que puedan continuar con el legado tanto de la franquicia como de su MVP.
 
-⭐ Si se consideran estadísticas claves tanto defensivas como ofensivas tan solo 4 jugadores cumplen con los criterios de renovación establecidos. Mientras que, contemplando solo estsdísticas claves defensivas 10 jugadores cumplen con los criterios de renovación. Sugerimos tener en cuenta a,bos criterios y evaluar por posición de jugadores, ya que mantener una base amplia del plantel suele ser un aspecto clave y mantener solo 4 jugadores sería una renovación muy drásctica del equipo. 
+⭐ Si se consideran estadísticas claves tanto defensivas como ofensivas tan solo 4 jugadores cumplen con los criterios de renovación establecidos. Mientras que, contemplando solo estsdísticas claves defensivas 11 jugadores en total cumplen con los criterios de renovación. Sugerimos tener en cuenta ambos criterios y evaluar por posición del jugador, ya que mantener una base amplia del plantel suele ser un aspecto clave y mantener solo 4 jugadores sería una renovación muy drásctica del equipo. 
 
 ---
 ## 💡 Recomendaciones
