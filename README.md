@@ -182,6 +182,7 @@ Para integrar los datos almacenados en Google Cloud, se configuró una conexión
 - **Tabla de Medidas:**
   Se incluyó una tabla de medidas que agrupara todas las métricas creadas durante la elaboración del dashboard. De este modo, la organización del modelo de datos es más clara y eficiente (todas las medidas concentradas en única tabla y no dispersas entre las distintas tablas incluidas en el modelo facilita la navegación y la modificación y edición de las métricas), el rendimiento del modelo se ve optimizado (las consultas se mejoran), el mantenimiento es más sencillo (las medidas están centralizadas en una tabla evitando confusiones y errores si es necesario realizar cambios y el trabajo se ve optmizado ayudando a domunetar y estructurar mejor el modelo), y se evita la mezcla entre las medidas y las columnas calculadas en las diferentes tablas.    
 - **Tabla de Prospects:** Se integró una tabla adicional denominada Prospectos, que contiene información estadística de jóvenes promesas del baloncesto para el año 2025. Los datos provienen del conjunto " 2025 NBA Draft Prospects Stats” disponible [aquí]( https://basketball.realgm.com/nba/draft/prospects/stats) y ofrecen métricas clave como puntos por partido, eficiencia y contribución al equipo en ligas menores y programas universitarios.
+- **Tabla de Renovaciones de Contratos:** Se integró una nueva tabla llamada RenovacionesContratos, que contiene los nombres de los jugadores del plantel actual, su id, su edad, su posición y una recomendación "Si" si se recomienda renovar su contrato o "No" si no se recomienda renovarlo, en base a la aplicación del modelo ML de clasificación binaria Rnadom forest.
 
 ### 5. :card_file_box:**Configuración del Modelo de Datos**
 - Relación de las tablas importadas en Power BI mediante claves primarias y foráneas, garantizando la integridad referencial de los datos.
@@ -264,6 +265,15 @@ Está diseñado para evaluar el desempeño de los jugadores jóvenes y promesas 
 -	**Métricas y Estadísticas Clave:** Se destacan estadísticas importantes que reflejan el desempeño reciente de los prospectos, como: asistencias, rebotes, puntos por juego y robos. Además, también se incluyen porcentajes de tiros.
 
 -	**Uso Estratégico:** Este dashboard no solo analiza las estadísticas básicas, sino que también sirve para evaluar fortalezas, debilidades y consistencia en el desempeño de los prospectos, ayudando a determinar qué jugadores podrían ser incorporados a la franquicia.
+
+
+### 🔄🚫 **Dashboard "Renovaciones":**
+Este dashboard brinda información sobre resultados obtenidos a través de un modelo ML de clasificación binaria RandomForest que tiene como variables predictoras todas las estadísticas de rendimiento de estos jugadores y como varibales a predecir, dos grupos de estadísticas clave (ofensivas y defensivas) que luego se comparan con valores comúnmente considerados en la NBA como criterios para decidir sobre renovación de contratos. Para entrenar el modelo se utilizó RandomForestClassifier de Scikit-Learn, dividiendo los datos en entrenamiento (80%) y prueba (20%). La precisión del modelo fue evaluada mediante classification_report y matriz de confusión.
+
+- **Tabla plantel actual:** muestra los jugadores del plantel actual, su edad, posición y una recomendación sobre si se recomienda o no la renovación de su contrato. Sobre la tabla se encuentra el enlace al notebook del modelo de clasificación en el cual se basa.
+- **Gráfico de jugadores por posición:** es un gráfico de embudo que muestra la cantidad de jugadores de que dispone el plantel actual en cada posición.
+-	**Filtro por renovación de contrato recomendada (Si-No):** en la esquina superior izquierda del dashboard se incluye un filtro (Si-No) que permite seleccionar a los jugadores a los que se recomienda renovar contrato o a los que no.
+-	**Filtro por posición:** debajo del filtro de renovación, se incluye un filtro con las 5 posiciones de los jugadores del plantel, el cual permite filtrar los jugadores que corresponden a cada puesto.
 
 
 ### ✅ **Dashboard "Conclusiones":**
