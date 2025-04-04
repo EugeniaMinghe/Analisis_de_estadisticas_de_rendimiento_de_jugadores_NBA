@@ -226,7 +226,7 @@ Estas columnas calculadas fueron diseñadas para optimizar el modelo de datos y 
 Estas medidas y columnas calculadas consolidaron un modelo analítico robusto que sirvió como base para la generación de insights estratégicos y visualizaciones en los dashboards interactivos.
 
 ## :chart_with_upwards_trend: Diseño de los Reportes y Gráficos Utilizados.
-El diseño de reportes y gráficos en esta etapa se enfocó en crear dashboards interactivos y dinámicos, cada uno orientado a proporcionar información clara y precisa según los objetivos del análisis.
+El diseño de reportes y gráficos en esta etapa se enfocó en crear dashboards interactivos y dinámicos, cada uno orientado a proporcionar información clara y precisa según los objetivos del análisis. El Dashboard se encuentra publicado en Power Bi Service y se puede encontrar [aquí](https://app.powerbi.com/view?r=eyJrIjoiOTcxZGM1ZTctYWNiOC00MWIwLWEwOTAtOGJkYWYyZmYxMzIyIiwidCI6IjAzYzkxNDU4LTQ4YzktNDFkMS04OWM4LTgwNDE2N2MzYzdmYyJ9&pageName=7909137095e99cc2ca02).
 
 ### 👥 **Dashboard "Team":**
 Proporciona una visión integral del rendimiento del equipo Los Angeles Lakers, con un enfoque en métricas clave tanto como local como visitante, además de porcentajes de efectividad. Esta diseñado para facilitar el análisis dinámico de las temporadas, permitiendo a los usuarios comprender las fortalezas y áreas de mejora del equipo.
