@@ -133,6 +133,64 @@ Estas medidas de seguridad permiten garantizar la integridad de los datos, prote
 
 ---
 
+## 📝 Resultados y Conclusiones
+
+Creamos un modelo de clasificación con Random Forest para predecir si un jugador debería renovar contrato o no. Esto se plasmó en un dashboard interactivo, donde se pueden ver:
+
+-Recomendaciones por jugador
+
+-Distribución por posiciones
+
+-Filtros por tipo de renovación
+
+-Gráficos de rendimiento por ofensiva y defensa
+
+Detectamos fortalezas defensivas y debilidades ofensivas. De hecho, si solo consideráramos estadísticas ofensivas, solo 4 jugadores renovarían; pero si consideramos la defensa, serían 11. Esto nos da una señal clara: la defensa está bien, pero la ofensiva necesita refuerzos.
+
+**🔄 Reforzar el equipo: jóvenes promesas**
+
+Propusimos incorporar talento joven como:
+
+Boogie Fland (Escolta): para mejorar la transición ofensiva y sumar puntos desde la rotación.
+
+Kam Jones (Base): para mejorar la eficiencia en tiros y jugadas ofensivas.
+
+Xaivian Lee (Base): para reducir errores, pérdidas y faltas desde la primera línea de defensa.
+
+Estos jugadores pueden aportar frescura y cubrir vacíos estratégicos del equipo actual.
+
+**✅ Conclusiones y estrategia**
+
+Base del equipo: Anthony Davis, Austin Reaves y LeBron James. Son los pilares sobre los que se puede construir.
+
+Jugadores a revisar: Isaiah Thomas, Mac McClung y Wenyen Gabriel no han rendido como se esperaba.
+
+Estrategia propuesta en 5 pasos:
+
+Mejorar puntería (FG% y 3P%)
+
+Reforzar la defensa
+
+Aumentar puntos desde la rotación
+
+Reducir errores y faltas
+
+Bajar la edad promedio alrededor de LeBron
+
+**🎯 Recomendaciones Finales**
+
+Monitorear el progreso individual.
+
+Optimizar entrenamientos.
+
+Hacer renovaciones estratégicas.
+
+Incorporar talento joven que sume valor real.
+
+En resumen, los Lakers tienen una base sólida, pero necesitan ajustes ofensivos y una estrategia clara para seguir siendo competitivos. Desde Gametime Stats, trazamos una hoja de ruta concreta que puede marcar la diferencia. El próximo paso depende de las decisiones que se tomen ahora.
+
+---
+
 ## 🖥️ **Stack Tecnológico y Herramientas**
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -142,5 +200,3 @@ Estas medidas de seguridad permiten garantizar la integridad de los datos, prote
   <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
 </p>
 
----
-## 📝 Resultados y Conclusiones
